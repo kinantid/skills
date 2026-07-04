@@ -1,6 +1,8 @@
 # skills
 
-A collection of [Claude Code](https://claude.com/claude-code) skills.
+A collection of agent skills in the open `SKILL.md` format. They run in
+[Claude Code](https://claude.com/claude-code), Codex, ChatGPT, Cursor, Gemini
+CLI, and the other tools that read the format.
 
 ## Install
 
@@ -11,7 +13,9 @@ npx skills add kinantid/skills
 ```
 
 Then pick the skills you want. This is the [skills.sh](https://skills.sh) installer:
-it auto-discovers every skill in `skills/` and installs the ones you select.
+it auto-discovers every skill in `skills/` and installs the ones you select. It
+targets the agent you're using; pass `-a` to be explicit, e.g.
+`npx skills add kinantid/skills -a codex` or `-a cursor`.
 
 ### Or symlink from a clone
 
@@ -38,34 +42,21 @@ Set `CLAUDE_SKILLS_DIR` to install somewhere other than `~/.claude/skills`.
 ### `refine`: communication refinement
 
 Refine, critique, and coach on written communication using [Wes Kao](https://www.weskao.com/)'s
-frameworks (BLUF, minimum viable backstory, signposting, question behind the question, MOO, "sales then
-logistics", finesse, the warm no, and more), adapted to *who* you're writing to
-and *where* it lands.
+frameworks (BLUF, minimum viable backstory, signposting, most obvious objection,
+"sales then logistics", finesse, the warm no, and more), adapted to *who* you're
+writing to and *where* it lands. Point it at any Slack message, email, memo,
+update, or bit of marketing copy and it diagnoses what's not landing and rewrites
+it, or coaches you through the strategy first.
 
-Point it at any Slack message, email, memo, update, customer note, or bit of
-marketing copy and it will diagnose what's not landing and rewrite it, or coach
-you through the strategy first.
+**To make it sound like you, give it samples of your own writing.** Paste a few
+real messages or emails, drop in screenshots of a thread, or point it at an export
+(Slack, email, a Google Doc). It calibrates tone, register, and habitual hedges
+from what you actually write, not from adjectives. Details are in the skill's
+"Voice calibration" section.
 
-The skill is organised into three layers:
-
-- **`principles/`**: one file per Kao framework. The reusable ideas.
-- **`audiences/`**: playbooks for four reader types (CEO/exec, cross-functional
-  leads, peers, customers/marketing), each with its own strictness and examples.
-- **`formats/`**: templates for Slack, email, and customer/marketing copy.
-
-**Make it yours.** The `SKILL.md` "Voice calibration (make it yours)" section is
-a fill-in-your-own template: set your tone, register, locale, and hedge-allergies
-so it writes in your voice. Worked examples use bracketed role placeholders
-(`[CEO]`, `[eng lead]`, `[customer]`, `[product]`, `[your name]`); read them as
-slots to fill with your own context.
-
-**Extending it.** When you add a principle, three things must stay in sync (the
-`SKILL.md` registry, the audience playbooks, and the `description:` triggers). Run
-the coverage check to catch anything missed:
-
-```sh
-./skills/refine/scripts/check-principle-coverage.sh
-```
+→ **[Read the full skill](skills/refine/SKILL.md)**: the principles, the audience
+playbooks (CEO, cross-functional, peers, customers/marketing), the formats, and
+how to extend it.
 
 ## Credits & attribution
 

@@ -163,7 +163,15 @@ If any check fails, revise before delivering.
 
 ## Voice calibration (make it yours)
 
-This section is a template. Fill in your own defaults so the skill writes in your voice, not a generic one. Define each dimension for your context, then let it hold unless a specific piece overrides it:
+**Calibrate on real samples, not adjectives.** The single fastest way to make this sound like you is to give it your actual writing to learn from. Before rewriting anything in the user's voice, make sure you have samples:
+
+- **Paste 3-6 examples** of things they've actually written: Slack messages, emails, a doc, a couple of customer replies. More range is better (a terse Slack *and* a longer email).
+- **Screenshots are fine.** If it's easier to screenshot a thread or a message than copy the text, take the image; read it and work from that.
+- **Or point at an export.** A Slack export, an email thread, a Google Doc, a Notion page: anything with a few hundred words of their real writing.
+
+Then infer tone, register, sentence length, and habitual hedges from those samples, and fill in the dimensions below from what you actually see, not from what they say they sound like. **If you're about to rewrite in the user's voice and have no samples, ask for them first.** A rewrite guessed from adjectives ("make it warm and direct") reads generic; one grounded in real samples reads like them.
+
+Once you have samples (or the user has filled these in), treat the rest of this section as the template. Fill in your own defaults so the skill writes in your voice, not a generic one. Define each dimension for your context, then let it hold unless a specific piece overrides it:
 
 - **Tone**: define your own (e.g. direct, warm, dry; or formal and precise; or plain and friendly). Whatever you pick, name the failure modes to avoid: corporate-speak on one side, performatively casual on the other. A concrete anchor helps ("X is fine to a teammate; 'I wanted to reach out to discuss' is never fine to anyone").
 - **Register / locale**: match your company's established voice, spelling, and locale. Don't let the skill Americanise (or Anglicise) copy your company writes a different way. Note any house-style words to prefer or avoid ("leverage", "circle back", "reach out") for your audience.
