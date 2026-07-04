@@ -17,7 +17,7 @@ Both failures are corrosive to trust. Getting it right makes you look effortless
 
 ## The principles (synthesised from Kao's framework)
 
-Our own synthesis and wording, adapted from Kao's approach — not a reproduction of her article. Read the original: [Wes Kao, "How I give the right amount of context"](https://www.weskao.com/).
+Our own synthesis and wording, adapted from Kao's approach — not a reproduction of her article. Read the original: [Wes Kao, "How I give the right amount of context"](https://newsletter.weskao.com/p/how-i-give-the-right-amount-of-context).
 
 
 ### 1. Start with what the reader already knows

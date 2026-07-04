@@ -32,10 +32,10 @@ Core principles (with reference files):
 - **How to be concise** → `principles/how-to-be-concise.md`
 - **How to get an enthusiastic yes** → `principles/enthusiastic-yes.md`
 - **The warm no (declining while keeping the relationship)** → `principles/the-warm-no.md`
-- **Managing up (15 principles)** → `principles/managing-up.md`
+- **Managing up** → `principles/managing-up.md`
 - **Strategy not self-expression** → `principles/strategy-not-self-expression.md`
-- **Presenting to your CEO (12 principles)** → `principles/present-to-ceo.md`
-- **Right amount of context (10 principles)** → `principles/right-amount-of-context.md`
+- **Presenting to your CEO** → `principles/present-to-ceo.md`
+- **Right amount of context** → `principles/right-amount-of-context.md`
 - **Turn a yellow spot into the sun** → `principles/yellow-spot-into-sun.md`
 - **CEDAF delegation framework** → `principles/cedaf-delegation.md`
 - **Finesse (same facts, better framing, in delicate situations)** → `principles/finesse.md`

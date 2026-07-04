@@ -8,9 +8,9 @@ Presenting to a CEO (or any senior exec) isn't just a longer version of presenti
 
 (Note: this skill deliberately doesn't cover *slide decks*. These principles still apply to written CEO comms: memos, pre-reads, status updates, one-pagers, Slack DMs to the CEO.)
 
-## The principles
+## The principles this skill leans on
 
-Adapted and reworded for written CEO comms — not a reproduction of Kao's article. For her full set in her own words, read the original: [Wes Kao, "How to present to your CEO"](https://www.weskao.com/).
+A selected subset — the CEO-comms moves this skill applies most — reworded and reordered for written comms. This is not Kao's full list; for her complete set in her own words, read the original: [Wes Kao, "How to present to your CEO"](https://newsletter.weskao.com/p/how-to-present-to-your-ceo).
 
 ### 1. Know what decision you want
 Every CEO interaction should have a named outcome. "Keep them informed" isn't an outcome. "Approve the Q3 hire", "Sign off on the launch date", "Bless the direction so I can go": those are outcomes. If you can't name the outcome, don't send the message.
@@ -18,35 +18,17 @@ Every CEO interaction should have a named outcome. "Keep them informed" isn't an
 ### 2. Lead with the bottom line
 BLUF. First sentence states the recommendation, decision, or ask. Not the background.
 
-### 3. Respect their time absolutely
-CEOs are compute-constrained. Every sentence must pass the "would they cut this?" test. Prune ruthlessly.
+### 3. Give them the one number that matters
+Data, yes, but one hero number. *"34% lift in activation"* lands harder than a table of 12 metrics. Put the hero number at the top. Details on request.
 
 ### 4. Anticipate their questions
 Before sending, ask: "what are the 3 questions they'll have after reading?" Address them pre-emptively. This is MOO applied upward.
 
-### 5. Know their priors
-What do they already believe about this topic? What are they worried about this quarter? What did they last say about this area? Tune the message to where they actually are, not where you wish they were.
-
-### 6. Give them the one number that matters
-Data, yes, but one hero number. *"34% lift in activation"* lands harder than a table of 12 metrics. Put the hero number at the top. Details on request.
-
-### 7. Be honest about what you don't know
+### 5. Be honest about what you don't know
 CEOs see through false confidence fast. If you're uncertain, say so, calibrated. *"Best guess is 20%. High uncertainty; will tighten in two weeks."* That reads as strong; *"definitely 20%"* when you don't know reads as weak.
 
-### 8. Don't ask them to do your job
-Don't send a 10-option decision tree. Do the work: narrow to 2 options, recommend one, make the case, accept that they might override. That's their job; the narrowing is yours.
-
-### 9. Skip the narrative arc
-CEOs don't need the story. They need the conclusion. Save the journey for the post-mortem.
-
-### 10. Make it scannable
-Even a well-written paragraph gets skimmed. Use bold, headers, and signposts so that a skim still conveys the core.
-
-### 11. Close with the next step
+### 6. Close with the next step
 End every CEO comm with a concrete next action: by whom, by when. *"Will move forward Monday unless I hear otherwise"* beats *"let me know your thoughts"* every time.
-
-### 12. Accept the speed of exec feedback
-CEOs respond in 20 words or not at all. Don't over-read tone or ambiguity. If you got a thumbs up, you got a yes. If you got silence, follow up once after 24 hrs; if still silence, assume implicit delegation and move.
 
 ## Quick application checklist
 
