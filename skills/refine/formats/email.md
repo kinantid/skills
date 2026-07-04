@@ -41,7 +41,7 @@ Subject: [Topic]: [recommendation or ask]
 
 [TL;DR: one sentence]
 
-[Context: 2–4 sentences OR a section, tightly bounded]
+[Context: 2-4 sentences OR a section, tightly bounded]
 
 [Recommendation + reasoning: the bulk of the memo]
 
@@ -73,9 +73,9 @@ Subject: [Ask + deadline]
 
 [The ask: one sentence]
 
-[Why it matters: 2–3 sentences]
+[Why it matters: 2-3 sentences]
 
-[What I've already done: 2–3 sentences, to demonstrate readiness]
+[What I've already done: 2-3 sentences, to demonstrate readiness]
 
 [MOO: address the one objection they'll have]
 
@@ -122,7 +122,7 @@ A 200-word email that lands is worth more than a 800-word one that gets half-rea
 | Audience | Email defaults |
 |---|---|
 | **CEO / exec** | TL;DR mandatory. Max 300 words, usually fewer. Section headers if over 150. One ask. MOO addressed. Deadline in subject. |
-| **Cross-functional lead** | TL;DR preferred. 150–500 words OK. Address their function's MOO. Make the ask specific and narrow. |
+| **Cross-functional lead** | TL;DR preferred. 150-500 words OK. Address their function's MOO. Make the ask specific and narrow. |
 | **Peer / teammate** | Rarely email; usually Slack or doc. When email, casual, direct. |
 | **Customer** | Specific to their context. TL;DR not a formal section, but the first sentence should do that work. Two next-step options. |
 

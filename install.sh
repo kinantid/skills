@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 #
-# install.sh — symlink every skill in this repo into ~/.claude/skills
+# install.sh: symlink every skill in this repo into ~/.claude/skills
 #
 # Skills stay in the repo; ~/.claude/skills gets a symlink per skill. Editing a
 # file in the repo is instantly live in Claude Code (no copy, no resync). Run
-# again any time you add a new skill — it's idempotent.
+# again any time you add a new skill, it's idempotent.
 #
 # Usage:
 #   ./install.sh           # symlink all skills, skip anything already correct
@@ -76,5 +76,5 @@ done
 echo
 echo "Done. linked=$linked relinked=$relinked already-ok=$skipped conflicts=$conflicts"
 echo "Skills directory: $SKILLS_DEST"
-$DRY_RUN && echo "(dry run — nothing was changed)"
+$DRY_RUN && echo "(dry run: nothing was changed)"
 [[ $conflicts -gt 0 ]] && exit 1 || exit 0

@@ -9,7 +9,7 @@ Writing upward to the CEO at your company, other C-suite, board members, or anyo
 ## Their reading context
 
 - Reading between meetings, often on mobile.
-- Context-switching every 5–15 minutes.
+- Context-switching every 5-15 minutes.
 - Simultaneously tracking 20+ threads across the business.
 - Pattern-matching fast, will form a judgment from the first sentence.
 - Low patience for process, narrative arc, or demonstrations of effort.
@@ -20,7 +20,7 @@ Writing upward to the CEO at your company, other C-suite, board members, or anyo
 2. **Minimum Viable Backstory**: cut all setup. If they need it, they'll ask.
 3. **One hero number**: lead with the single most important quantitative fact.
 4. **MOO** (most obvious objection): address the first objection they'll have in the same breath. They *will* have one.
-5. **Finesse**: when flagging a risk or bad news, frame the true fact as a managed thing — "here's the risk and here's how it's handled" lands very differently from "this might be a problem". Never spin; just lead with the defensible positive truth. See `principles/finesse.md`.
+5. **Finesse**: when flagging a risk or bad news, frame the true fact as a managed thing: "here's the risk and here's how it's handled" lands very differently from "this might be a problem". Never spin; just lead with the defensible positive truth. See `principles/finesse.md`.
 6. **Right amount of context**: minimum viable; offer links for more.
 7. **Managing up**: strip apology, hedging, process talk.
 

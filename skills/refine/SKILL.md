@@ -3,7 +3,7 @@ name: refine
 description: Refine, critique, and coach on written communication using Wes Kao's frameworks (MVB, signposting, question behind the question, MOO, BLUF, concise, strategy-not-self-expression, yellow-spot, managing up, CEO presentation, right amount of context, enthusiastic yes, finesse). Use whenever the user asks to "review this draft", "make this sharper", "help me write a Slack to [CEO/leadership/team]", "draft an email to [customer/CFO/cross-functional lead]", "is this too long", "am I burying the lede", "how do I pitch this", "help me manage up", "critique my message", "make this land", "how should I frame this", or pastes in a draft of any Slack message, email, memo, update, customer-facing note, or marketing copy. Also triggers on "why isn't this landing", "am I being too wordy", "what objection am I missing", "does this make sense to a [CEO/exec/PM/customer]", or any written-communication feedback request. Do NOT use for slide decks or presentations (out of scope for this skill).
 ---
 
-# Refine — communication refinement (Wes Kao frameworks)
+# Refine: communication refinement (Wes Kao frameworks)
 
 This skill helps you sharpen written communication for three format families (Slack/chat, email/written updates, and customer/marketing copy) across four audiences: the CEO, cross-functional leads, product teammates, and external customers/marketing readers. It applies Wes Kao's communication frameworks, adapted for a product context at your company.
 
@@ -69,7 +69,7 @@ Before touching the draft, figure out three things. If any one of them is unclea
 
 ### Step 2: Load the right references
 
-Based on mode + audience + format, read the audience playbook, the format template, and the 2–3 principles that matter most for this specific piece. Don't read every principle every time: that bloats context and dilutes the feedback.
+Based on mode + audience + format, read the audience playbook, the format template, and the 2-3 principles that matter most for this specific piece. Don't read every principle every time: that bloats context and dilutes the feedback.
 
 Quick selection heuristics:
 
@@ -117,8 +117,8 @@ Follow the mode:
 
 **Critique mode output:**
 ```
-What's working: [1–2 things done well, specific]
-What's not landing: [2–4 specific issues, each tied to a Kao principle]
+What's working: [1-2 things done well, specific]
+What's not landing: [2-4 specific issues, each tied to a Kao principle]
 The real problem: [one sentence: the single biggest issue to fix]
 Suggested path: [one paragraph: how you'd attack the rewrite]
 ```
@@ -134,7 +134,7 @@ What changed and why:
 - [change]: [principle]
 ```
 
-Keep the "what changed" list to 3–5 items. If there are more, the draft needed a structural rethink, not edits. Say so.
+Keep the "what changed" list to 3-5 items. If there are more, the draft needed a structural rethink, not edits. Say so.
 
 **Coach mode output:**
 ```
@@ -182,7 +182,7 @@ If you explicitly ask for a different tone (e.g., "make this warmer" or "this ne
 
 ## Things this skill deliberately doesn't do
 
-- **Does not apply every principle to every draft.** Pick the 2–3 that matter. Over-applying dilutes feedback.
+- **Does not apply every principle to every draft.** Pick the 2-3 that matter. Over-applying dilutes feedback.
 - **Does not rewrite a user's voice into something generic.** Kao's principles are about clarity and strategy, not about making everyone sound the same. Preserve phrasing that's recognisably the user's.
 - **Does not cover decks, slide presentations, or live-verbal scripts.** Out of scope. If asked, redirect.
 - **Does not police grammar or typos.** Unless explicitly asked. Focus is on strategic communication, not proofreading.
@@ -245,15 +245,15 @@ refine/
     └── check-principle-coverage.sh
 ```
 
-Read the reference files as needed, don't load them all upfront. The 2–3 principles you select in Step 2, plus the audience and format files, is usually the right load.
+Read the reference files as needed, don't load them all upfront. The 2-3 principles you select in Step 2, plus the audience and format files, is usually the right load.
 
 ## Maintaining this skill (adding a principle)
 
 Principles get added over time. When you add one, three things need to stay in sync, or the new principle quietly never gets used:
 
-1. **The registry** — add the principle to the "Core principles" list in this file (with its `principles/<stem>.md` link), and to the Step-2 selection heuristics and Step-3 diagnosis patterns where relevant.
-2. **The audiences** — decide which of the four audience playbooks it changes. Not every principle belongs in every audience, but most belong in at least one. Reference it in that audience's "Default principles to apply" list (link it as `principles/<stem>.md` so the coverage check can see it) and add a worked example if it earns one.
-3. **The description** — if the principle is a new headline concept, add it to the `description:` frontmatter trigger list.
+1. **The registry**: add the principle to the "Core principles" list in this file (with its `principles/<stem>.md` link), and to the Step-2 selection heuristics and Step-3 diagnosis patterns where relevant.
+2. **The audiences**: decide which of the four audience playbooks it changes. Not every principle belongs in every audience, but most belong in at least one. Reference it in that audience's "Default principles to apply" list (link it as `principles/<stem>.md` so the coverage check can see it) and add a worked example if it earns one.
+3. **The description**: if the principle is a new headline concept, add it to the `description:` frontmatter trigger list.
 
 To check nothing was missed, run the coverage script:
 
@@ -263,7 +263,7 @@ To check nothing was missed, run the coverage script:
 
 It prints a matrix of every principle against SKILL.md and the four audiences, using forgiving matching (case-insensitive, hyphens and spaces treated as equivalent, so prose names like "Right amount of context" count). It flags two things:
 
-- **Missing from SKILL.md** — the principle isn't in the registry at all. Always fix this; the default run exits non-zero on it.
-- **Orphan (no audience references it)** — advisory. A principle can legitimately sit outside the audience playbooks (e.g. a delegation framework), but an orphan usually means a playbook is out of date. Review each one.
+- **Missing from SKILL.md**: the principle isn't in the registry at all. Always fix this; the default run exits non-zero on it.
+- **Orphan (no audience references it)**: advisory. A principle can legitimately sit outside the audience playbooks (e.g. a delegation framework), but an orphan usually means a playbook is out of date. Review each one.
 
 Use `--quiet` to see only the gaps, or `--strict` to also fail the run on orphans (useful in CI once every principle is deliberately wired in).

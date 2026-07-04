@@ -20,7 +20,7 @@ Key properties:
 ```
 [One-line headline: the thing they need to know]
 
-[1–2 sentences of context if needed]
+[1-2 sentences of context if needed]
 
 [Optional: what you want them to do with this: or nothing if it's truly FYI]
 ```
@@ -33,7 +33,7 @@ Example (to eng lead):
 ```
 [The ask: one sentence]
 
-[Why it matters / context: 1–2 sentences]
+[Why it matters / context: 1-2 sentences]
 
 [What you need from them: specific action + timing]
 ```
@@ -119,9 +119,9 @@ One emoji where it adds tone. Two max. Don't stack. (`:ok_hand:` at the end of a
 
 | Audience | Slack default |
 |---|---|
-| **CEO** | Short, direct, often no greeting. One ask per message. Leads with the point. 2–4 sentences total. |
-| **Cross-functional lead** | Warmer than CEO, but still lead with the ask. 3–6 sentences. Address their function's likely objection. |
-| **Peer / teammate** | Casual, short, direct. Greetings fine ("oi", "hey"). Humour welcome. 1–3 sentences usually enough. |
+| **CEO** | Short, direct, often no greeting. One ask per message. Leads with the point. 2-4 sentences total. |
+| **Cross-functional lead** | Warmer than CEO, but still lead with the ask. 3-6 sentences. Address their function's likely objection. |
+| **Peer / teammate** | Casual, short, direct. Greetings fine ("oi", "hey"). Humour welcome. 1-3 sentences usually enough. |
 | **Customer** | Rare (Slack Connect only). Keep it professional but warm; treat like a short email. Never casual first contact. |
 
 ## Anti-patterns in Slack

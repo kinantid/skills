@@ -8,7 +8,7 @@ Managing up isn't sucking up. It's making your manager's (or any senior stakehol
 
 ## The principles this skill leans on
 
-A selected subset — the managing-up moves that most affect *written* comms — reworded and reordered for this skill. This is not Kao's full list; for all 15 in her own words, read the original: [Wes Kao, "15 principles for managing up"](https://newsletter.weskao.com/p/15-principles-for-managing-up).
+A selected subset (the managing-up moves that most affect *written* comms), reworded and reordered for this skill. This is not Kao's full list; for all 15 in her own words, read the original: [Wes Kao, "15 principles for managing up"](https://newsletter.weskao.com/p/15-principles-for-managing-up).
 
 ### 1. Make their job easier
 Every interaction should lower their cognitive load or unblock something. If you're adding work to their plate, compensate with disproportionate value.

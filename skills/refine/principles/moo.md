@@ -49,13 +49,13 @@ The first version invites "but what about migration?" as the first response. The
 
 ## How to prioritise which objection
 
-You'll often see 2–3 possible objections. Rank them by:
+You'll often see 2-3 possible objections. Rank them by:
 
 1. **Obviousness**: what's the first thing the reader will notice?
 2. **Severity**: which one, if unaddressed, would kill the idea?
 3. **The specific reader's priors**: a CFO will object to cost; an eng lead to complexity; a CEO to strategic risk.
 
-Address the top 1–2. Beyond that, you're padding.
+Address the top 1-2. Beyond that, you're padding.
 
 ## Common failure mode
 

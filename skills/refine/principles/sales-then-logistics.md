@@ -12,7 +12,7 @@ Kao's framing: people skip the sales because they assume the audience already ge
 
 Most professional communication front-loads logistics: dates, numbers, steps, asks. The reader processes the surface information but doesn't internalise *the point*, so they don't prioritise the work, don't push back productively, don't advocate for the idea later.
 
-30–60 seconds of "sales" before the logistics is enough to anchor the reader. Skip it and the rest of the message gets discounted.
+30-60 seconds of "sales" before the logistics is enough to anchor the reader. Skip it and the rest of the message gets discounted.
 
 ## How to apply it
 
@@ -24,7 +24,7 @@ Before any meaningful ask or update, build a tiny "sales" preamble:
 
 Then go into logistics: dates, decisions, steps, asks.
 
-Length: usually 1–3 sentences. Sometimes one well-chosen sentence is enough. The point isn't a sermon, it's an anchor.
+Length: usually 1-3 sentences. Sometimes one well-chosen sentence is enough. The point isn't a sermon, it's an anchor.
 
 ## Sales-then-logistics, by audience
 

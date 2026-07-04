@@ -29,7 +29,7 @@ For anything longer than three sentences, consider:
 - Bolded micro-headers in emails/memos: "Context", "Recommendation", "Risks", "Ask".
 - Numbered lists when the order matters ("first, second, third"). Bulleted when it doesn't.
 
-For Slack, signposts are usually just 2–4 words at the start of each message or thought: *"Quick update:"*, *"One ask:"*, *"Context:"*.
+For Slack, signposts are usually just 2-4 words at the start of each message or thought: *"Quick update:"*, *"One ask:"*, *"Context:"*.
 
 ## Before / after
 

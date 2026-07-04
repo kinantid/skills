@@ -25,7 +25,7 @@ Finesse looks like instinct but it's a sequence you can run deliberately:
 5. **Decide how to communicate it.** Tone, framing, word choice, channel.
 6. **Execute.** Actually say it, and adjust live.
 
-Most people skip 1–3 and jump to 4. The finesse is in the front half.
+Most people skip 1-3 and jump to 4. The finesse is in the front half.
 
 ## The worked example (the heart of this principle)
 
@@ -57,9 +57,9 @@ Then sanity-check against the bar: every reframe must still be true and defensib
 
 ## Plausible linkage (answer the question you want to answer)
 
-Marc Randolph's observation: a skilled operator can "answer whichever question you want to answer" by establishing **plausible linkage** between what was asked and the more useful thing you'd rather address. This is QBQ's more aggressive cousin: not just decoding the real question, but bridging from the literal question to the answer that serves the outcome. Requires judgment about the relationship; overused, it reads as dodging. See `principles/qbq.md`.
+Marc Randolph's observation: a skilled operator can "answer whichever question you want to answer" by establishing **plausible linkage** between what was asked and the more useful thing you'd rather address. This is a more aggressive cousin of the question-behind-the-question move: not just decoding the real question, but bridging from the literal question to the answer that serves the outcome. Requires judgment about the relationship; overused, it reads as dodging. See `principles/qbq.md`.
 
-## Personality–message–delivery fit
+## Personality-message-delivery fit
 
 The same sentence that's authentic from one person is off-key from another. A cheeky, confident line lands from someone whose voice carries it and clangs from someone it doesn't fit. Finesse includes knowing your own register: don't borrow framing that you can't deliver convincingly. Match the move to the messenger.
 

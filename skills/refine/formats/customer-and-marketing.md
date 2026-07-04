@@ -65,7 +65,7 @@ Example ([product] landing page):
 ### Template 2: Outbound marketing email
 
 ```
-Subject: [Specific, curiosity-triggering, 6–10 words]
+Subject: [Specific, curiosity-triggering, 6-10 words]
 
 [Specific hook: why are you emailing them, specifically]
 

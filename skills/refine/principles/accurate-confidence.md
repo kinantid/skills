@@ -37,7 +37,7 @@ These are usually self-protection, not honesty. They signal "don't blame me if I
 
 ### Over-claiming
 
-- *"Definitely 20% lift"* when you mean "best guess 20%, could be 10–30%."
+- *"Definitely 20% lift"* when you mean "best guess 20%, could be 10-30%."
 - *"This will work"* about a hypothesis that hasn't been tested.
 - *"Customers love it"* based on three positive comments.
 
@@ -49,7 +49,7 @@ Kao's recommended pattern (paraphrased): *"Be confident about the recommendation
 
 Some templates:
 
-- *"Recommending X. Confidence is high on the direction; lower on the magnitude: best guess +15%, range +5–25%."*
+- *"Recommending X. Confidence is high on the direction; lower on the magnitude: best guess +15%, range +5-25%."*
 - *"My read: X. Two things would change that: [a] [b]."*
 - *"Going with X. Worth flagging: I'm extrapolating from a 3-customer sample, so the magnitude is rough."*
 - *"Open question: could be X or Y. I'll have data in two weeks; happy to recommend then."*
@@ -92,7 +92,7 @@ Translation: someone is going to hold you to 20%, and you don't actually know.
 
 ### Calibrated
 
-> Best estimate is +20% ARR from the new pricing model. Range is roughly +10–30% based on benchmark data; we'll know within 30 days of launch.
+> Best estimate is +20% ARR from the new pricing model. Range is roughly +10-30% based on benchmark data; we'll know within 30 days of launch.
 
 ## How this skill uses it
 

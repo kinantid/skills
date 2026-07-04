@@ -27,7 +27,7 @@ Principles that apply **less** here:
 - Formal structure: usually unnecessary.
 - MOO: if the peer will push back, that's welcome and normal; you don't always need to pre-empt.
 - Managing up formality: irrelevant lateral.
-- Finesse: low day-to-day (shared context and trust mean you can be plain), but it still matters for the sensitive lateral moments — declining, giving hard feedback, or a delicate ask. There, same facts / honest positive frame applies. See `principles/finesse.md`.
+- Finesse: low day-to-day (shared context and trust mean you can be plain), but it still matters for the sensitive lateral moments: declining, giving hard feedback, or a delicate ask. There, same facts / honest positive frame applies. See `principles/finesse.md`.
 
 ## What they want to see
 

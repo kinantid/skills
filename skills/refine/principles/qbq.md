@@ -1,18 +1,18 @@
 # Answer the question behind the question
 
-**Source**: the "answer the real question underneath" move as taught in Wes Kao's communication writing. Note: "QBQ" and *The Question Behind the Question* are a registered trademark and book by John G. Miller, a separate body of work — this file is about the general communication move, not Miller's material, so we avoid the "QBQ" shorthand here.
+**Source**: the "answer the real question underneath" move as taught in Wes Kao's communication writing. Note: "QBQ" and *The Question Behind the Question* are a registered trademark and book by John G. Miller, a separate body of work. This file is about the general communication move, not Miller's material, so we avoid the "QBQ" shorthand here.
 
 ## The core idea
 
 People rarely ask the question they actually want answered. They ask a surface-level question, and what they *actually* want is something underneath it: a judgment, a recommendation, a reassurance, a decision.
 
-The QBQ move: before answering, figure out what the person actually wants to know. Then answer that. The literal question usually gets answered along the way.
+The move here: before answering, figure out what the person actually wants to know. Then answer that. The literal question usually gets answered along the way.
 
 ## Why it matters
 
 Answering only the literal question makes you look junior. It signals "I followed instructions" instead of "I understood what you needed." Execs especially hate this: they ask compressed questions because they're busy, and they expect you to decode.
 
-Also: answering the QBQ builds trust. When someone feels understood, they delegate more, interrupt less, and treat you like a peer.
+Also: answering the real question builds trust. When someone feels understood, they delegate more, interrupt less, and treat you like a peer.
 
 ## How to apply it
 
@@ -22,11 +22,11 @@ When someone asks you a question (especially in writing, especially from above),
 2. **What's the context they're operating in?** (Board prep? A meeting in 10 minutes? A worry they won't name?)
 3. **What would a great version of this answer unlock for them?**
 
-Then answer the QBQ first, and bolt the literal answer on.
+Then answer the real question first, and bolt the literal answer on.
 
-## Common QBQ decodings
+## Common decodings
 
-| Literal question | Usually the QBQ |
+| Literal question | Usually the real question |
 |---|---|
 | "What's the status on X?" | Is it on track, am I going to get surprised, and do you need anything from me? |
 | "How many users are on the new feature?" | Is it working, and should we invest more or pull back? |
@@ -41,12 +41,12 @@ Then answer the QBQ first, and bolt the literal answer on.
 **Before (literal answer):**
 > It's going well. We finished the design last week and eng started building on Monday. On track for end of month.
 
-**After (QBQ answer):**
+**After (real-question answer):**
 > On track to ship end of month. No blockers; I'll flag early if that changes. One thing worth your attention: we're seeing a signal in the prototype that activation could lift more than we forecast. I'll have data in two weeks if you want to revisit our Q3 targets.
 
 Same question. The "after" version tells the CEO (1) nothing's broken, (2) they don't need to worry, (3) there might be an upside worth flagging. That's what they actually wanted.
 
-## When the QBQ is different from the literal
+## When the real question is different from the literal
 
 If you think the person's real need diverges meaningfully from what they asked, you can name it gently: *"I think the real question here might be X: if so, [answer]. If you meant it literally, [short answer]."*
 
@@ -55,6 +55,6 @@ If you think the person's real need diverges meaningfully from what they asked, 
 Two opposite failures:
 
 1. **Over-literalism**: answering only what was asked, verbatim. Junior move.
-2. **Over-projection**: assuming a QBQ that isn't there and ignoring the literal question. Arrogant move.
+2. **Over-projection**: assuming a hidden question that isn't there and ignoring the literal question. Arrogant move.
 
-The fix is to answer the QBQ *and* the literal in the same breath. That covers both.
+The fix is to answer the real question *and* the literal in the same breath. That covers both.

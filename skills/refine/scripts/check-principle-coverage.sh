@@ -11,7 +11,7 @@
 # equivalent on both sides. So the file `right-amount-of-context.md` is counted
 # as referenced whether an audience writes "right-amount-of-context",
 # "principles/right-amount-of-context.md", or the prose "Right amount of
-# context". It is a heuristic, not a parser — read the matrix, don't trust it
+# context". It is a heuristic, not a parser: read the matrix, don't trust it
 # blindly.
 #
 # Usage:
@@ -24,7 +24,7 @@
 #   1  a principle is missing from SKILL.md, or (--strict) an audience orphan
 #   2  bad layout / usage
 #
-# The must-fix signal is "missing from SKILL.md" — that means a principle isn't
+# The must-fix signal is "missing from SKILL.md": that means a principle isn't
 # in the registry at all. An audience "orphan" is advisory: a principle needn't
 # live in every audience, but an orphan often means a playbook is out of date.
 
@@ -109,7 +109,7 @@ done
 if [ "$QUIET" -eq 0 ]; then
   echo
   echo "Summary: $missing_from_skill principle(s) missing from SKILL.md; $orphans referenced by no audience."
-  echo "Fix any 'missing from SKILL.md' first — those aren't in the registry."
+  echo "Fix any 'missing from SKILL.md' first: those aren't in the registry."
   echo "Review orphans: a principle needn't be in every audience, but an orphan often means a playbook is stale."
 fi
 

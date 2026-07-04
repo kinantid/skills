@@ -118,7 +118,7 @@ Applies: BLUF (the fix is first), MOO ("what actually went wrong" + "will this h
 **After (same fact, honest positive frame):**
 > The platform comfortably handles 500 concurrent users, well beyond your current size. As you grow it scales with you, and we flag ahead of any threshold so it's never a surprise.
 
-Applies: finesse (lead with the capability, state the headroom, turn "what happens at scale" into a managed promise), negative-language audit (scrub "don't", "issues", "but", "usually"). Every clause stays true and defensible — that's the bar. See `principles/finesse.md`.
+Applies: finesse (lead with the capability, state the headroom, turn "what happens at scale" into a managed promise), negative-language audit (scrub "don't", "issues", "but", "usually"). Every clause stays true and defensible. That's the bar. See `principles/finesse.md`.
 
 ### Declining a customer (feature request, refund, partnership)
 
