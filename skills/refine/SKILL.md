@@ -1,9 +1,9 @@
 ---
-name: communication-refinement
+name: refine
 description: Refine, critique, and coach on written communication using Wes Kao's frameworks (MVB, signposting, QBQ, MOO, BLUF, concise, strategy-not-self-expression, yellow-spot, managing up, CEO presentation, right amount of context, enthusiastic yes, finesse). Use whenever the user asks to "review this draft", "make this sharper", "help me write a Slack to [CEO/leadership/team]", "draft an email to [customer/CFO/cross-functional lead]", "is this too long", "am I burying the lede", "how do I pitch this", "help me manage up", "critique my message", "make this land", "how should I frame this", or pastes in a draft of any Slack message, email, memo, update, customer-facing note, or marketing copy. Also triggers on "why isn't this landing", "am I being too wordy", "what objection am I missing", "does this make sense to a [CEO/exec/PM/customer]", or any written-communication feedback request. Do NOT use for slide decks or presentations (out of scope for this skill).
 ---
 
-# Communication Refinement (Wes Kao)
+# Refine — communication refinement (Wes Kao frameworks)
 
 This skill helps you sharpen written communication for three format families (Slack/chat, email/written updates, and customer/marketing copy) across four audiences: the CEO, cross-functional leads, product teammates, and external customers/marketing readers. It applies Wes Kao's communication frameworks, adapted for a product context at your company.
 
@@ -213,7 +213,7 @@ What changed and why:
 ## Reference file structure
 
 ```
-communication-refinement/
+refine/
 ├── SKILL.md (this file)
 ├── principles/
 │   ├── minimum-viable-backstory.md
