@@ -67,9 +67,30 @@ the coverage check to catch anything missed:
 ./skills/refine/scripts/check-principle-coverage.sh
 ```
 
-The frameworks are Wes Kao's; this repo packages them as a skill. Read her writing
-for the source material.
+## Credits & attribution
+
+The communication frameworks referenced in the `refine` skill (BLUF, minimum
+viable backstory, signposting, "most obvious objection", "sales then logistics",
+finesse, and others) are **[Wes Kao](https://www.weskao.com/)'s work**. Each
+principle file credits its source. This repo is an **independent, unofficial**
+restatement and adaptation of those ideas in our own words, built as a Claude
+Code skill — it is **not affiliated with, endorsed by, or reviewed by Wes Kao**.
+
+If these frameworks are useful to you, go read and subscribe to
+[her newsletter](https://www.weskao.com/) — this skill is a working aid, not a
+substitute for the source material.
+
+Where a framework originates elsewhere, it's credited to the original author
+(e.g. "the question behind the question" as a communication move is distinct from
+John G. Miller's trademarked *QBQ® / The Question Behind the Question*; the "warm
+no" close draws on Alison Green / Ask a Manager).
 
 ## License
 
-MIT — see [LICENSE](LICENSE).
+The **MIT license ([LICENSE](LICENSE)) covers only this repository's own
+expression** — the skill's playbooks, examples, scripts, and structure. It does
+**not** grant any rights in the underlying frameworks, nor in any third party's
+copyrighted text or trademarks, which remain with their respective owners.
+Copyright protects the specific expression of an idea, not the idea, method, or
+its name; this skill teaches and applies the frameworks in original wording and
+reproduces no substantial verbatim text from any source.

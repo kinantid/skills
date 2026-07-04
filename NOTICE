@@ -1,0 +1,31 @@
+NOTICE
+======
+
+This repository packages a set of written-communication frameworks as a Claude
+Code skill (`skills/refine`).
+
+Attribution
+-----------
+The frameworks referenced in the `refine` skill are the work of Wes Kao
+(https://www.weskao.com/). Each principle file under skills/refine/principles/
+credits its source. This project is an independent, unofficial restatement and
+adaptation of those ideas in original wording. It is NOT affiliated with,
+endorsed by, sponsored by, or reviewed by Wes Kao.
+
+Some referenced ideas originate with other authors and are credited accordingly,
+including:
+- "QBQ" and "The Question Behind the Question" — a registered trademark and book
+  by John G. Miller. This project does not use that material; it describes the
+  general "answer the real question" communication move only.
+- The "warm no" rejection close draws in part on Alison Green (Ask a Manager).
+
+License scope
+-------------
+The MIT license in LICENSE applies to this repository's own original content
+(the skill's playbooks, examples, scripts, and structure). It does not grant any
+rights in third-party frameworks, copyrighted text, or trademarks referenced
+here, which remain the property of their respective owners. Copyright protects a
+work's specific expression, not the underlying ideas, methods, or their names.
+
+If a rights holder believes any content here reproduces their protected
+expression, please open an issue and it will be addressed promptly.

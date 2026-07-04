@@ -1,6 +1,6 @@
-# QBQ: The Question Behind the Question
+# Answer the question behind the question
 
-**Source**: Wes Kao, "Answer the question behind the question"
+**Source**: the "answer the real question underneath" move as taught in Wes Kao's communication writing. Note: "QBQ" and *The Question Behind the Question* are a registered trademark and book by John G. Miller, a separate body of work — this file is about the general communication move, not Miller's material, so we avoid the "QBQ" shorthand here.
 
 ## The core idea
 

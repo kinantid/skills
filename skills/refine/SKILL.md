@@ -1,6 +1,6 @@
 ---
 name: refine
-description: Refine, critique, and coach on written communication using Wes Kao's frameworks (MVB, signposting, QBQ, MOO, BLUF, concise, strategy-not-self-expression, yellow-spot, managing up, CEO presentation, right amount of context, enthusiastic yes, finesse). Use whenever the user asks to "review this draft", "make this sharper", "help me write a Slack to [CEO/leadership/team]", "draft an email to [customer/CFO/cross-functional lead]", "is this too long", "am I burying the lede", "how do I pitch this", "help me manage up", "critique my message", "make this land", "how should I frame this", or pastes in a draft of any Slack message, email, memo, update, customer-facing note, or marketing copy. Also triggers on "why isn't this landing", "am I being too wordy", "what objection am I missing", "does this make sense to a [CEO/exec/PM/customer]", or any written-communication feedback request. Do NOT use for slide decks or presentations (out of scope for this skill).
+description: Refine, critique, and coach on written communication using Wes Kao's frameworks (MVB, signposting, question behind the question, MOO, BLUF, concise, strategy-not-self-expression, yellow-spot, managing up, CEO presentation, right amount of context, enthusiastic yes, finesse). Use whenever the user asks to "review this draft", "make this sharper", "help me write a Slack to [CEO/leadership/team]", "draft an email to [customer/CFO/cross-functional lead]", "is this too long", "am I burying the lede", "how do I pitch this", "help me manage up", "critique my message", "make this land", "how should I frame this", or pastes in a draft of any Slack message, email, memo, update, customer-facing note, or marketing copy. Also triggers on "why isn't this landing", "am I being too wordy", "what objection am I missing", "does this make sense to a [CEO/exec/PM/customer]", or any written-communication feedback request. Do NOT use for slide decks or presentations (out of scope for this skill).
 ---
 
 # Refine — communication refinement (Wes Kao frameworks)
@@ -25,7 +25,7 @@ Core principles (with reference files):
 
 - **Minimum Viable Backstory (start right before you get eaten by the bear)** → `principles/minimum-viable-backstory.md`
 - **Signposting (reduce cognitive load)** → `principles/signposting.md`
-- **Question Behind the Question (QBQ)** → `principles/qbq.md`
+- **Answer the question behind the question** → `principles/qbq.md`
 - **Most Obvious Objection (MOO)** → `principles/moo.md`
 - **Sales, then logistics** → `principles/sales-then-logistics.md`
 - **Accurate confidence** → `principles/accurate-confidence.md`
@@ -75,7 +75,7 @@ Quick selection heuristics:
 
 - Pitching a decision, ask, or recommendation → MOO, enthusiastic-yes, strategy-not-self-expression, sales-then-logistics
 - Status update or retro → MVB, signposting, yellow-spot-into-sun, right-amount-of-context, accurate-confidence
-- Answering an exec question → QBQ, concise, MVB, accurate-confidence
+- Answering an exec question → question behind the question, concise, MVB, accurate-confidence
 - Managing up to CEO or board → managing-up, present-to-ceo, MOO, sales-then-logistics
 - Customer / marketing copy → strategy-not-self-expression, enthusiastic-yes, concise, yellow-spot-into-sun, finesse
 - Answering a delicate / loaded question (limits, pricing, "can you do X?", anything where the bare fact could be misread) → finesse, qbq, strategy-not-self-expression
@@ -91,7 +91,7 @@ Even in refine mode, do a silent diagnosis first. The goal is to know which prin
 
 - **Buried lede** → the main point is in paragraph 3, not sentence 1. Fix with BLUF + signposting.
 - **Too much backstory** → the writer starts with setup instead of the point. Fix with MVB.
-- **Asking the literal question, not the real one** → the writer is answering what was asked, not what's actually being asked. Fix with QBQ.
+- **Asking the literal question, not the real one** → the writer is answering what was asked, not what's actually being asked. Fix with question behind the question.
 - **No anticipation of objections** → reader will push back within 10 seconds of reading. Fix with MOO.
 - **Self-expression not strategy** → the writer is venting, processing, or being clever instead of moving the reader. Fix with strategy-not-self-expression.
 - **Vague ask** → no clear action, decision, or next step. Fix with enthusiastic-yes + concise.
@@ -139,7 +139,7 @@ Keep the "what changed" list to 3–5 items. If there are more, the draft needed
 **Coach mode output:**
 ```
 Before I draft, I want to make sure we've got the strategy right. Two questions:
-1. [question targeting the QBQ: what does the reader actually need to decide/do?]
+1. [question targeting the question behind the question: what does the reader actually need to decide/do?]
 2. [question targeting the MOO or the ask: what's the objection you're most worried about? / what's the single outcome you want?]
 
 Once you answer, I'll draft.
