@@ -18,7 +18,7 @@ The skill (`skills/communication-refinement/`) is organised into three layers:
 
 ## Make it yours
 
-The skill ships with a **"Voice calibration (make it yours)"** section in `SKILL.md`. Fill in your own tone, register, locale, and hedge-allergies so it writes in *your* voice, not a generic one. Example names in the docs (Dana, Sam, Chris, and the fictional product "Northwind") are placeholders — swap in your own context as you go.
+The skill ships with a **"Voice calibration (make it yours)"** section in `SKILL.md`. Fill in your own tone, register, locale, and hedge-allergies so it writes in *your* voice, not a generic one. The worked examples use bracketed role placeholders (`[CEO]`, `[eng lead]`, `[customer]`, `[product]`, `[your name]`) — read them as slots to fill with your own people, product, and context.
 
 ## Install
 
