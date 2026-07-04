@@ -65,10 +65,10 @@ Quick rules of thumb:
 ## Before / after
 
 **Before (wrong amount: too much context for CEO):**
-> Dana, want to share an update on activation. As a refresher, activation is defined as users completing at least 3 meaningful actions in their first 7 days. We measure it via event tracking in Amplitude, and the baseline we've been tracking against was established in Q4 2024 when we set the OKR. Since then, we've made several iterations to the onboarding flow, including an in-app tour that we shipped in February and a set of checkpoint emails that we shipped in March. The March iteration was based on research from the user research team that indicated…
+> [CEO], want to share an update on activation. As a refresher, activation is defined as users completing at least 3 meaningful actions in their first 7 days. We measure it via event tracking in Amplitude, and the baseline we've been tracking against was established in Q4 2024 when we set the OKR. Since then, we've made several iterations to the onboarding flow, including an in-app tour that we shipped in February and a set of checkpoint emails that we shipped in March. The March iteration was based on research from the user research team that indicated…
 
 **After (right amount: BLUF, one number, offer more):**
-> Dana, activation is up to 41% this week (from 28% baseline). Onboarding redesign is the main driver. Full breakdown in the memo if useful, but headline is: we're above Q2 target three weeks early.
+> [CEO], activation is up to 41% this week (from 28% baseline). Onboarding redesign is the main driver. Full breakdown in the memo if useful, but headline is: we're above Q2 target three weeks early.
 
 ## Before / after (too little context)
 

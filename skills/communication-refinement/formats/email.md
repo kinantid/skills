@@ -165,9 +165,9 @@ Not more. Especially not: extensive appendices, journey-of-the-analysis narrativ
 - Don't over-apologise. One acknowledgement is enough.
 
 Example:
-> Dana, pushing the launch 2 weeks to 10 June. Root cause: integration bug we found in staging yesterday. Eng is on it; fix ETA next Wednesday with QA after.
+> [CEO], pushing the launch 2 weeks to 10 June. Root cause: integration bug we found in staging yesterday. Eng is on it; fix ETA next Wednesday with QA after.
 >
-> I know this impacts the sales enablement timing. I've talked to Mel and we've got a pre-launch version to use for enablement in the meantime.
+> I know this impacts the sales enablement timing. I've talked to [GTM lead] and we've got a pre-launch version to use for enablement in the meantime.
 >
 > Updating the roadmap doc today. Flag anything you'd like me to handle differently.
 

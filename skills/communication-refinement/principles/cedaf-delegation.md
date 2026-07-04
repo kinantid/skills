@@ -77,13 +77,13 @@ Excitement isn't fake enthusiasm. It's making sure the meaning is there. A bored
 
 ### Without CEDAF
 
-> Hey Sam, can you look into our pricing options and let me know what you think? Thanks!
+> Hey [eng lead], can you look into our pricing options and let me know what you think? Thanks!
 
-Fails on most dimensions. No clear deliverable, no why, no constraints, no alignment, no feedback rhythm. Sam will either over-deliver (waste effort) or under-deliver (miss the mark).
+Fails on most dimensions. No clear deliverable, no why, no constraints, no alignment, no feedback rhythm. They'll either over-deliver (waste effort) or under-deliver (miss the mark).
 
 ### With CEDAF
 
-> Sam, want a 1-pager by Thursday recommending tiered vs. usage pricing for mid-market. **(C)**
+> [eng lead], want a 1-pager by Thursday recommending tiered vs. usage pricing for mid-market. **(C)**
 >
 > This unlocks the Q3 ARR target. We've been blocked on a recommendation for two weeks and it's the last thing in the way. **(E)**
 >
@@ -93,7 +93,7 @@ Fails on most dimensions. No clear deliverable, no why, no constraints, no align
 >
 > Quick check-in Wed afternoon if it'd help; otherwise just send the doc Thursday morning. **(F)**
 
-Now Sam knows: what to produce, why it matters, what to avoid, what done looks like, and how to course-correct.
+Now they know: what to produce, why it matters, what to avoid, what done looks like, and how to course-correct.
 
 ## When CEDAF can be lighter
 

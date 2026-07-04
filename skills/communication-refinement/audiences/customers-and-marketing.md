@@ -68,10 +68,10 @@ Your product is a B2B SaaS product. Customer comms should:
 ### Customer email (renewal nudge)
 
 **Before (self-expression / corporate):**
-> Hi Chris, hope you're having a great week! I wanted to reach out because your Northwind subscription is coming up for renewal and I wanted to share some of the exciting new features we've been working on. We've been listening to customer feedback and are thrilled to announce a number of improvements. I'd love to jump on a call to discuss!
+> Hi [customer], hope you're having a great week! I wanted to reach out because your [product] subscription is coming up for renewal and I wanted to share some of the exciting new features we've been working on. We've been listening to customer feedback and are thrilled to announce a number of improvements. I'd love to jump on a call to discuss!
 
 **After (strategy / concrete):**
-> Chris, your Northwind renewal is 12 May.
+> [customer], your [product] renewal is 12 May.
 >
 > Since you signed up, we've shipped the reporting dashboard you asked for (live 2 weeks ago) and the mobile upload (live last month). Would be good to walk through them before renewal. 15 min this week?
 >
@@ -82,10 +82,10 @@ Applies: MOO ("is the new pricing going up?" → not addressed but no alarm rais
 ### Marketing copy (landing page headline)
 
 **Before:**
-> Northwind is the leading platform for teams like yours, helping you streamline your operations and improve efficiency.
+> [product] is the leading platform for teams like yours, helping you streamline your operations and improve efficiency.
 
 **After:**
-> Meridian cut project admin by 11 hours a week on Northwind.
+> [customer] cut project admin by 11 hours a week on [product].
 >
 > Software built for teams like yours: scheduling, reports, and documents, all in one place.
 >
@@ -96,10 +96,10 @@ Applies: yellow-spot-into-sun (lead with the concrete customer win), concision (
 ### Customer de-escalation email
 
 **Before:**
-> Hi Mei, so sorry for the inconvenience you've been experiencing. We completely understand how frustrating this must be. Please know we are taking this very seriously and our team is working hard to resolve it. We will keep you updated with any new information.
+> Hi [customer], so sorry for the inconvenience you've been experiencing. We completely understand how frustrating this must be. Please know we are taking this very seriously and our team is working hard to resolve it. We will keep you updated with any new information.
 
 **After:**
-> Mei, we pushed a fix for the sync issue 20 minutes ago. Your backlog should clear in the next hour.
+> [customer], we pushed a fix for the sync issue 20 minutes ago. Your backlog should clear in the next hour.
 >
 > What went wrong: [one-line technical explanation]. What we're doing so it doesn't recur: [one line].
 >

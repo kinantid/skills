@@ -34,7 +34,7 @@ For Slack, signposts are usually just 2–4 words at the start of each message o
 ## Before / after
 
 **Before (no signposts):**
-> We've been thinking about the pricing model. There's a lot of variability in how customers are using the product now which makes usage-based tricky but tiered has its own issues. Sam ran some numbers and it looks like tiered would leave about $200k on the table annually vs usage but it's simpler to execute. The eng team said they could do either one in 4 weeks though usage is more complex. Thoughts?
+> We've been thinking about the pricing model. There's a lot of variability in how customers are using the product now which makes usage-based tricky but tiered has its own issues. The [eng lead] ran some numbers and it looks like tiered would leave about $200k on the table annually vs usage but it's simpler to execute. The eng team said they could do either one in 4 weeks though usage is more complex. Thoughts?
 
 **After (with signposts):**
 > **Pricing model: recommending tiered.** Context, tradeoffs, and one ask below.

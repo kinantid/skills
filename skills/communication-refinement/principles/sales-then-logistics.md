@@ -39,15 +39,15 @@ Length: usually 1–3 sentences. Sometimes one well-chosen sentence is enough. T
 
 ### Without sales (logistics-only)
 
-> Dana, pushing the launch from 13 May to 20 May. Eng needs another week for the billing integration. Will brief sales today.
+> [CEO], pushing the launch from 13 May to 20 May. Eng needs another week for the billing integration. Will brief sales today.
 
-This is a 3-sentence message that gives Dana no reason to care. They'll register the date change but won't process whether to push back, accelerate, or escalate.
+This is a 3-sentence message that gives your CEO no reason to care. They'll register the date change but won't process whether to push back, accelerate, or escalate.
 
 ### With sales
 
-> Dana, pushing the launch from 13 May to 20 May, to protect the Acme deal ($180k, billing-dependent). Eng needs another week to harden the billing integration; without it, we risk shipping with a bug Acme would hit on day one. Briefing sales today.
+> [CEO], pushing the launch from 13 May to 20 May, to protect the [customer] deal ($180k, billing-dependent). Eng needs another week to harden the billing integration; without it, we risk shipping with a bug [customer] would hit on day one. Briefing sales today.
 
-Same logistics, but the *why* is anchored ("protect the Acme deal", "ship with a bug Acme would hit"). Now Dana knows what's at stake and can engage with the decision rather than just acknowledging it.
+Same logistics, but the *why* is anchored ("protect the [customer] deal", "ship with a bug [customer] would hit"). Now your CEO knows what's at stake and can engage with the decision rather than just acknowledging it.
 
 ## When sales is the lead
 

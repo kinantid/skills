@@ -40,7 +40,7 @@ Specific asks are easier to say yes to than vague ones.
 - Pre-identify who else needs to be looped in, so they don't have to.
 
 ### 5. Show momentum
-People say yes more enthusiastically to things that are already moving. *"Sam and Mei are both in, I just need you as the third."* Social proof + nearly-done framing.
+People say yes more enthusiastically to things that are already moving. *"[eng lead] and [data lead] are both in, I just need you as the third."* Social proof + nearly-done framing.
 
 ### 6. Make the cost of no visible (gently)
 If there's a real consequence to saying no, name it, not as a threat, but as information. *"If we don't move on this by Friday we lose the launch window."*
@@ -51,12 +51,12 @@ A tiny ask gets a fast yes. If what you want is too big for an enthusiastic yes,
 ## Before / after
 
 **Before (tepid-yes-inviting):**
-> Hey Dana, I was thinking it might be worth doing some research into usage patterns so we can maybe figure out if there's a better pricing model for the future. It might take a few weeks and would involve eng and data. Let me know what you think.
+> Hey [CEO], I was thinking it might be worth doing some research into usage patterns so we can maybe figure out if there's a better pricing model for the future. It might take a few weeks and would involve eng and data. Let me know what you think.
 
 **After (enthusiastic-yes-inviting):**
-> Dana, two-week pricing experiment that could lift ARR by 5% without re-signing customers. I've scoped it with Sam (eng) and Mei (data), we can run it in parallel to Q2 work, no new headcount. Want me to kick off Monday?
+> [CEO], two-week pricing experiment that could lift ARR by 5% without re-signing customers. I've scoped it with [eng lead] and [data lead], we can run it in parallel to Q2 work, no new headcount. Want me to kick off Monday?
 
-The second version: leads with outcome for the CEO ("5% ARR lift"), pre-scopes the work, shows momentum ("I've scoped it with Sam and Mei"), and ends with a specific, bounded action ("kick off Monday?"). Easy yes.
+The second version: leads with outcome for the CEO ("5% ARR lift"), pre-scopes the work, shows momentum ("I've scoped it with [eng lead] and [data lead]"), and ends with a specific, bounded action ("kick off Monday?"). Easy yes.
 
 ## The "would I say yes to this?" test
 

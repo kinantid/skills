@@ -39,7 +39,7 @@ Example (to eng lead):
 ```
 
 Example (to cross-functional lead):
-> Sam, can the QA team take on one extra test case for the billing migration?
+> [eng lead], can the QA team take on one extra test case for the billing migration?
 >
 > it's the retry edge case; CS flagged it as the highest-likelihood failure mode.
 >
@@ -75,7 +75,7 @@ Example (to CEO):
 ```
 
 Example (to CEO):
-> Dana, recommend we delay the pricing change to Q3.
+> [CEO], recommend we delay the pricing change to Q3.
 >
 > two deals ($240k total) are mid-pipeline at current pricing; repricing would restart negotiations.
 >
@@ -138,26 +138,26 @@ One emoji where it adds tone. Two max. Don't stack. (`:ok_hand:` at the end of a
 ### To CEO
 
 **Before:**
-> Hi Dana, hope you're having a great day! I wanted to share an update on the onboarding work. We've been working on the redesign for a few weeks now and things are going well. Let me know if you have any questions :)
+> Hi [CEO], hope you're having a great day! I wanted to share an update on the onboarding work. We've been working on the redesign for a few weeks now and things are going well. Let me know if you have any questions :)
 
 **After:**
-> Dana, onboarding redesign on track to ship 3 May. Activation in prototype hitting 38% (vs 28% baseline). Full memo in #product if useful.
+> [CEO], onboarding redesign on track to ship 3 May. Activation in prototype hitting 38% (vs 28% baseline). Full memo in #product if useful.
 
 ### To cross-functional lead
 
 **Before:**
-> Hey Sam, quick question (no rush at all!), was just wondering if maybe eng might have some bandwidth to look at a small thing on the billing webhook? It's related to retries and I think it might be kind of a small lift but I'm not sure. Let me know when you have a sec.
+> Hey [eng lead], quick question (no rush at all!), was just wondering if maybe eng might have some bandwidth to look at a small thing on the billing webhook? It's related to retries and I think it might be kind of a small lift but I'm not sure. Let me know when you have a sec.
 
 **After:**
-> sam, small webhook thing (retry edge case). estimated ~1 day. can eng take it this sprint or defer to next?
+> [eng lead], small webhook thing (retry edge case). estimated ~1 day. can eng take it this sprint or defer to next?
 
 ### To peer
 
 **Before:**
-> Hi Mei, I wanted to reach out to discuss the design review we had yesterday. I had some thoughts on the feedback and wanted to share them with you. Do you have some time later this week to chat?
+> Hi [teammate], I wanted to reach out to discuss the design review we had yesterday. I had some thoughts on the feedback and wanted to share them with you. Do you have some time later this week to chat?
 
 **After:**
-> oi mei, was thinking about the review yesterday, had a few thoughts on the nav pattern. coffee thurs?
+> oi [teammate], was thinking about the review yesterday, had a few thoughts on the nav pattern. coffee thurs?
 
 ## When Slack isn't the right medium
 

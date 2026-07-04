@@ -38,7 +38,7 @@ Principles that apply **less** here:
 
 ## What they don't want to see
 
-- Formal structure on a casual Slack ("Dear Sam, I wanted to draft a brief overview…").
+- Formal structure on a casual Slack ("Dear [teammate], I wanted to draft a brief overview…").
 - Excessive hedging ("sorry to bother you again").
 - Treating them like they don't remember yesterday.
 - Corporate-speak.
@@ -58,7 +58,7 @@ Principles that apply **less** here:
 ## Slack examples
 
 **Good:**
-> sam, is the billing webhook deployed to staging yet? need to test the retry case
+> [teammate], is the billing webhook deployed to staging yet? need to test the retry case
 
 Warm, direct, one ask. No pre-amble. No BLUF ceremony; the first word *is* the context.
 
@@ -68,7 +68,7 @@ Warm, direct, one ask. No pre-amble. No BLUF ceremony; the first word *is* the c
 Casual, informative, a touch of humour, clear action, implied next step (standup).
 
 **Too formal (over-applying CEO rules to a peer):**
-> Sam, Recommending we defer the release to Tuesday. Main risk: more QA cycles. Benefit: fewer rollbacks. Sign off?
+> [teammate], Recommending we defer the release to Tuesday. Main risk: more QA cycles. Benefit: fewer rollbacks. Sign off?
 
 Formal structure on a lateral Slack reads as cold / weird / performative. Don't.
 

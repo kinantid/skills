@@ -51,7 +51,7 @@ Leads from other functions at your company: eng lead, design lead, GTM / sales l
 | **CFO** | "What's the revenue impact, the cost, the margin, and when do we see payback?" |
 | **Ops / PMO** | "How does this fit with everything else planned? What moves?" |
 
-Address the relevant function's MOO explicitly. *"Jess, recommending we build X. Eng impact: 4 weeks with Sam's team, no new infra. Happy to walk through the scoping."* You've pre-empted the "how much eng?" question.
+Address the relevant function's MOO explicitly. *"[GTM lead], recommending we build X. Eng impact: 4 weeks with [eng lead]'s team, no new infra. Happy to walk through the scoping."* You've pre-empted the "how much eng?" question.
 
 ## Structural template
 
@@ -67,7 +67,7 @@ Address the relevant function's MOO explicitly. *"Jess, recommending we build X.
 
 ## Slack example (to eng lead)
 
-> Sam, want to add event instrumentation on the new onboarding flow. Scope is small: 4 events, piggybacking on our existing Amplitude setup.
+> [eng lead], want to add event instrumentation on the new onboarding flow. Scope is small: 4 events, piggybacking on our existing Amplitude setup.
 >
 > I've drafted the event spec (linked). Should be a ~1 day lift. Want to include it in next sprint?
 
@@ -105,7 +105,7 @@ Cross-functional relationships are long-running. Unlike the CEO (where efficienc
 
 - Acknowledging their constraint ("I know eng is packed, so this is a small ask")
 - Giving them optionality ("happy to defer if this isn't the right time")
-- Explicit appreciation when they help ("thanks Sam, this unblocked the whole thing")
+- Explicit appreciation when they help ("thanks [eng lead], this unblocked the whole thing")
 
 These are cheap and compound. Don't skip them.
 

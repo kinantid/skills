@@ -63,12 +63,12 @@ Same facts. The sun is now the sun. The other things are secondary notes. A read
 Yellow-spot-into-sun is especially important in marketing copy. Your strongest proof point should be the first thing a reader sees, not the third paragraph.
 
 **Before:**
-> Northwind helps teams manage projects more efficiently. We offer a range of features including scheduling, document management, and reporting. Our customers include Meridian and Acme, and many have reported significant time savings.
+> [product] helps teams manage projects more efficiently. We offer a range of features including scheduling, document management, and reporting. Our customers include [customer A] and [customer B], and many have reported significant time savings.
 
 **After:**
-> Meridian cut project admin time by 40% in their first quarter on Northwind.
+> [customer] cut project admin time by 40% in their first quarter on [product].
 >
-> Northwind is the project management platform built specifically for teams like yours: scheduling, docs, reporting, all in one place.
+> [product] is the project management platform built specifically for teams like yours: scheduling, docs, reporting, all in one place.
 
 The second version leads with the sun (concrete result from a recognisable customer), then fills in the supporting story.
 

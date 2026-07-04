@@ -67,12 +67,12 @@ When refining a message going **upward** (CEO, manager, exec, board), these prin
 ## Before / after
 
 **Before (bad managing up):**
-> Hi Dana, hope your week is going well! I'm really sorry to bother you but I was wondering if you might have some time to talk about the Q3 roadmap. I know you're super busy so no rush at all, just whenever works! I have some thoughts I wanted to share but I'm not sure what the best approach is. Let me know what you think when you get a sec. Thanks so much!!
+> Hi [CEO], hope your week is going well! I'm really sorry to bother you but I was wondering if you might have some time to talk about the Q3 roadmap. I know you're super busy so no rush at all, just whenever works! I have some thoughts I wanted to share but I'm not sure what the best approach is. Let me know what you think when you get a sec. Thanks so much!!
 
 Violates: 7 (style), 9 (specific), 11 (close loop unclear), 12 (over-apologise), 15 (protect time).
 
 **After:**
-> Dana, want to lock Q3 roadmap this week. Recommending onboarding revamp as P0 (memo attached, 2-min read). 15 min Wed or Thu to sign off?
+> [CEO], want to lock Q3 roadmap this week. Recommending onboarding revamp as P0 (memo attached, 2-min read). 15 min Wed or Thu to sign off?
 
 Applies: 1, 3, 6, 9, 15. One clear ask, one clear recommendation, one clear time box.
 

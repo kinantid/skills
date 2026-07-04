@@ -190,9 +190,9 @@ If you explicitly ask for a different tone (e.g., "make this warmer" or "this ne
 
 ## A worked example
 
-Draft the user pastes: *"Hi Dana, hope you're well! Just wanted to circle back on the pricing discussion from last week. I know we talked about a few different options and I've been thinking about it more and I think maybe we should consider going with the tiered approach, although there are some risks, so keen to hear your thoughts. Also wanted to flag that the eng team might push back on timelines. Let me know when you have 5 mins to chat!"*
+Draft the user pastes: *"Hi [CEO], hope you're well! Just wanted to circle back on the pricing discussion from last week. I know we talked about a few different options and I've been thinking about it more and I think maybe we should consider going with the tiered approach, although there are some risks, so keen to hear your thoughts. Also wanted to flag that the eng team might push back on timelines. Let me know when you have 5 mins to chat!"*
 
-Audience: CEO (Dana). Format: Slack. Mode: default → refine.
+Audience: CEO. Format: Slack. Mode: default → refine.
 
 Strictness: strict.
 
@@ -202,7 +202,7 @@ Diagnosis: lede buried three clauses deep; hedges everywhere ("just wanted", "I 
 
 Refined output:
 
-> Dana, recommending we go with the tiered pricing approach. Main risk is eng timeline pushback; I've scoped a 2-week delivery with Sam and he's comfortable. Want to lock this in by Friday so we can brief sales next week. 5 mins today or tomorrow?
+> [CEO], recommending we go with the tiered pricing approach. Main risk is eng timeline pushback; I've scoped a 2-week delivery with [eng lead] and they're comfortable. Want to lock this in by Friday so we can brief sales next week. 5 mins today or tomorrow?
 
 What changed and why:
 - Lede first, not last: BLUF / signposting

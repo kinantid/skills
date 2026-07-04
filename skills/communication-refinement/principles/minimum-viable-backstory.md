@@ -21,7 +21,7 @@ Readers (especially execs, CEOs, customers) give you maybe 10 seconds to earn mo
 ## Before / after
 
 **Before (too much backstory):**
-> Last quarter we kicked off a new initiative around onboarding. You might remember that we'd been seeing drop-off at the 7-day mark and Sam proposed a series of in-app prompts. We spent about six weeks building it, with help from design and eng. We shipped it three weeks ago and have been monitoring the data since. The results are in and I wanted to share them with you.
+> Last quarter we kicked off a new initiative around onboarding. You might remember that we'd been seeing drop-off at the 7-day mark and the [eng lead] proposed a series of in-app prompts. We spent about six weeks building it, with help from design and eng. We shipped it three weeks ago and have been monitoring the data since. The results are in and I wanted to share them with you.
 
 **After (MVB):**
 > The onboarding prompts we shipped three weeks ago cut 7-day drop-off by 34%. Full breakdown below.

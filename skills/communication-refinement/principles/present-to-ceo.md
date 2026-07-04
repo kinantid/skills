@@ -62,10 +62,10 @@ Before sending anything to a CEO, verify:
 ## Before / after
 
 **Before (2 paragraphs of setup before the ask):**
-> Hi Dana, hope your week's going well. I wanted to loop you in on where we've landed with the onboarding work. As you know, we've been exploring a few directions and getting input from eng, design and customer success. It's been a productive process and we've learned a lot. I think we're now at the point where we need to make a call on which direction to go. The two main options are: (a) an in-app tour approach, which the design team prefers, or (b) a checklist-based flow, which has more data behind it. Both have pros and cons but after weighing everything I'm leaning towards (b). Let me know your thoughts when you have a chance.
+> Hi [CEO], hope your week's going well. I wanted to loop you in on where we've landed with the onboarding work. As you know, we've been exploring a few directions and getting input from eng, design and customer success. It's been a productive process and we've learned a lot. I think we're now at the point where we need to make a call on which direction to go. The two main options are: (a) an in-app tour approach, which the design team prefers, or (b) a checklist-based flow, which has more data behind it. Both have pros and cons but after weighing everything I'm leaning towards (b). Let me know your thoughts when you have a chance.
 
 **After (BLUF):**
-> Dana, going with the checklist onboarding flow (option b). Data is stronger; design prefers option a but the ARR lift from b is 3x larger based on the prototype.
+> [CEO], going with the checklist onboarding flow (option b). Data is stronger; design prefers option a but the ARR lift from b is 3x larger based on the prototype.
 >
 > Two risks: (1) build is 2 weeks longer; (2) requires minor backend change. Both scoped with eng, no blockers.
 >

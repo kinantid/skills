@@ -54,8 +54,8 @@ If any of these fail, rewrite.
 [CTA: one clear action, plus one optional lower-commitment option]
 ```
 
-Example (Northwind landing page):
-> Meridian cut project admin by 11 hours a week on Northwind.
+Example ([product] landing page):
+> [customer] cut project admin by 11 hours a week on [product].
 >
 > Project management built for teams like yours.
 > Scheduling, reports, documents, all in one place.
@@ -75,11 +75,11 @@ Subject: [Specific, curiosity-triggering, 6–10 words]
 ```
 
 Example:
-> Subject: 3 ways Meridian sped up report turnaround
+> Subject: 3 ways [customer] sped up report turnaround
 >
 > Saw you're running 4 projects right now. Probably a lot of report traffic.
 >
-> Meridian cut average report turnaround from 4 days to under 18 hours after switching to Northwind. We built a short case study if useful.
+> [customer] cut average report turnaround from 4 days to under 18 hours after switching to [product]. We built a short case study if useful.
 >
 > Want me to send it, or prefer a 15-min walkthrough?
 
@@ -94,7 +94,7 @@ Example:
 ```
 
 Example:
-> Chris, your Northwind renewal's coming up on 12 May.
+> [customer], your [product] renewal's coming up on 12 May.
 >
 > A few things you asked for have shipped since we last spoke: the reporting dashboard is live, and the mobile upload went out last month.
 >
@@ -114,7 +114,7 @@ Example:
 ```
 
 Example:
-> Mei, the sync issue you reported this morning is fixed as of 10:40am. Your data should be fully caught up by 11:30.
+> [customer], the sync issue you reported this morning is fixed as of 10:40am. Your data should be fully caught up by 11:30.
 >
 > Root cause: a webhook retry loop on our side after a deploy yesterday. We've added a monitoring alert so this gets caught in minutes next time, not hours.
 >
@@ -170,10 +170,10 @@ Every piece of external copy has predictable reader objections. Address them:
 ### Landing page headline
 
 **Before:**
-> Northwind is a comprehensive, industry-leading platform designed to help teams streamline their operations and improve project outcomes.
+> [product] is a comprehensive, industry-leading platform designed to help teams streamline their operations and improve project outcomes.
 
 **After:**
-> Built for teams like yours. Used by Meridian and Acme.
+> Built for teams like yours. Used by [customer A] and [customer B].
 >
 > Scheduling, reports, and docs in one place: set up in a day.
 
@@ -192,10 +192,10 @@ Every piece of external copy has predictable reader objections. Address them:
 ### Customer check-in
 
 **Before:**
-> Hi Chris! Just wanted to touch base and see how things are going over at [company]. We really value our partnership with you and wanted to make sure everything is working smoothly. Please let us know if there's anything we can do to support you or if you have any feedback. Looking forward to hearing from you!
+> Hi [customer]! Just wanted to touch base and see how things are going over at [company]. We really value our partnership with you and wanted to make sure everything is working smoothly. Please let us know if there's anything we can do to support you or if you have any feedback. Looking forward to hearing from you!
 
 **After:**
-> Chris, been a month since the onboarding call. Any friction I should know about?
+> [customer], been a month since the onboarding call. Any friction I should know about?
 >
 > Also wanted to flag: the reporting dashboard you asked for is live now. Quick 10-min walkthrough this week if useful, or I can just drop a loom.
 
@@ -213,7 +213,7 @@ Every piece of external copy has predictable reader objections. Address them:
 
 External copy is the one place where self-censorship matters:
 
-- **Don't claim specific outcomes unless they're defensible.** "Customers typically save 40%" is dangerous without data. "Meridian saved 11 hours/week" is safe because it's a single attributed claim.
+- **Don't claim specific outcomes unless they're defensible.** "Customers typically save 40%" is dangerous without data. "[customer] saved 11 hours/week" is safe because it's a single attributed claim.
 - **Customer names require permission**: never publish a customer name in marketing copy without written consent.
 - **Competitive claims**: avoid naming competitors directly; write about the problem they don't solve well instead.
 
