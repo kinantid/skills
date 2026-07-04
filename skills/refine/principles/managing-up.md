@@ -1,4 +1,4 @@
-# Managing Up: 15 Principles
+# Managing Up
 
 **Source**: Wes Kao, "15 principles for managing up"
 
@@ -6,7 +6,9 @@
 
 Managing up isn't sucking up. It's making your manager's (or any senior stakeholder's) job easier so they can make yours easier in return. Done well, it buys you autonomy, trust, and the best projects. Done poorly (or not at all), it caps your career.
 
-## The 15 principles
+## The principles
+
+Adapted and reworded for a written-comms context — not a reproduction of Kao's article. For her full set in her own words, read the original: [Wes Kao, "15 principles for managing up"](https://www.weskao.com/).
 
 ### 1. Make their job easier
 Every interaction should lower their cognitive load or unblock something. If you're adding work to their plate, compensate with disproportionate value.

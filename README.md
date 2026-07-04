@@ -69,21 +69,20 @@ the coverage check to catch anything missed:
 
 ## Credits & attribution
 
-The communication frameworks referenced in the `refine` skill (BLUF, minimum
-viable backstory, signposting, "most obvious objection", "sales then logistics",
-finesse, and others) are **[Wes Kao](https://www.weskao.com/)'s work**. Each
-principle file credits its source. This repo is an **independent, unofficial**
-restatement and adaptation of those ideas in our own words, built as a Claude
-Code skill — it is **not affiliated with, endorsed by, or reviewed by Wes Kao**.
+These skills **restate and adapt other people's frameworks** in original wording,
+as working aids — the ideas are theirs. The bulk of the `refine` skill is
+**[Wes Kao](https://www.weskao.com/)'s work**; other principles credit other
+authors. Each principle file names its source, and every source is listed in
+[`CREDITS.md`](CREDITS.md) with a link to where you can read and support them.
 
-If these frameworks are useful to you, go read and subscribe to
-[her newsletter](https://www.weskao.com/) — this skill is a working aid, not a
-substitute for the source material.
+This repo is **independent and unofficial** — not affiliated with, endorsed by,
+or reviewed by any of the people credited. If a framework is useful to you, go
+support the person who developed it; these skills aren't a substitute for the
+source material.
 
-Where a framework originates elsewhere, it's credited to the original author
-(e.g. "the question behind the question" as a communication move is distinct from
-John G. Miller's trademarked *QBQ® / The Question Behind the Question*; the "warm
-no" close draws on Alison Green / Ask a Manager).
+Adding your own principle from a source? Follow the attribution convention in
+[`CREDITS.md`](CREDITS.md): credit in the file, restate rather than reproduce,
+add the author to the credits table, and attribute accurately.
 
 ## License
 

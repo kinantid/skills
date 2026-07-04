@@ -1,4 +1,4 @@
-# Presenting to Your CEO: 12 Principles
+# Presenting to Your CEO
 
 **Source**: Wes Kao, "How to present to your CEO"
 
@@ -8,7 +8,9 @@ Presenting to a CEO (or any senior exec) isn't just a longer version of presenti
 
 (Note: this skill deliberately doesn't cover *slide decks*. These principles still apply to written CEO comms: memos, pre-reads, status updates, one-pagers, Slack DMs to the CEO.)
 
-## The 12 principles
+## The principles
+
+Adapted and reworded for written CEO comms — not a reproduction of Kao's article. For her full set in her own words, read the original: [Wes Kao, "How to present to your CEO"](https://www.weskao.com/).
 
 ### 1. Know what decision you want
 Every CEO interaction should have a named outcome. "Keep them informed" isn't an outcome. "Approve the Q3 hire", "Sign off on the launch date", "Bless the direction so I can go": those are outcomes. If you can't name the outcome, don't send the message.

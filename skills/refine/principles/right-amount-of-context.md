@@ -15,7 +15,10 @@ Getting context wrong is the most common failure mode in professional writing:
 
 Both failures are corrosive to trust. Getting it right makes you look effortlessly effective.
 
-## The 10 principles (synthesised from Kao's framework)
+## The principles (synthesised from Kao's framework)
+
+Our own synthesis and wording, adapted from Kao's approach — not a reproduction of her article. Read the original: [Wes Kao, "How I give the right amount of context"](https://www.weskao.com/).
+
 
 ### 1. Start with what the reader already knows
 Don't re-explain things they own. Don't assume they know things outside their lane. If in doubt, ask: "are they close to this or far from it?"
