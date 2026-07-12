@@ -1,0 +1,72 @@
+name: skill-guard
+# Scans PR diffs for patterns that have no business in an agent-skill repo:
+# prompt-injection phrasing, hidden/bidirectional unicode, download-and-execute
+# pipes, encoded payloads. Also validates skill structure. This check is
+# REQUIRED by the main-branch ruleset — but note it runs from the PR's own
+# ref, so a PR that edits this workflow can weaken it: treat any diff touching
+# .github/workflows/ as maximum-suspicion during human review.
+
+on:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  guard:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Scan added lines for malicious patterns
+        run: |
+          set -euo pipefail
+          git fetch --quiet origin "${{ github.base_ref }}"
+          ADDED=$(git diff "origin/${{ github.base_ref }}"...HEAD | grep '^+' | grep -v '^+++' || true)
+
+          fail=0
+
+          check() { # name, pattern (PCRE)
+            local name="$1" pattern="$2" hits
+            hits=$(printf '%s\n' "$ADDED" | grep -PniE "$pattern" | head -5 || true)
+            if [ -n "$hits" ]; then
+              echo "::error::BLOCKED ($name):"
+              printf '%s\n' "$hits"
+              fail=1
+            fi
+          }
+
+          # Prompt-injection phrasing aimed at the agent reading the skill
+          check "injection-phrasing" 'ignore (all |any )?(previous|prior|above|earlier) (instructions|rules)|disregard (your|the) (system|previous)|do not (tell|show|inform|reveal to) the user|without (telling|informing|asking) the user|hide this from'
+          # Hidden / bidirectional unicode (invisible instructions)
+          check "hidden-unicode" '[\x{200B}\x{200C}\x{200D}\x{200E}\x{200F}\x{202A}-\x{202E}\x{2060}-\x{2064}\x{2066}-\x{2069}\x{FEFF}]'
+          # Download-and-execute
+          check "download-exec" '(curl|wget)[^|;\n]*\|\s*(ba|z|da)?sh|iwr[^|]*\|\s*iex'
+          # Encoded payload execution
+          check "encoded-exec" 'base64\s+(-d|--decode)[^|]*\|\s*(ba|z)?sh|echo\s+[A-Za-z0-9+/=]{60,}.*\|\s*base64'
+          # Credential / secret harvesting paths
+          check "cred-paths" '~/\.(aws|ssh|gnupg)/|\.env\b.*(cat|curl|POST|send)|id_rsa|credentials\.json.*(curl|POST|http)'
+          # Exfiltration verbs pointed at URLs inside skill instructions
+          check "exfil" '(send|post|upload|forward)[^.\n]{0,40}(contents|file|data|conversation|transcript)[^.\n]{0,40}https?://'
+
+          [ "$fail" -eq 0 ] && echo "No malicious patterns in added lines."
+          exit "$fail"
+
+      - name: Validate skill structure
+        run: |
+          set -euo pipefail
+          fail=0
+          for d in skills/*/; do
+            s="${d}SKILL.md"
+            [ -f "$s" ] || { echo "::error::$d has no SKILL.md"; fail=1; continue; }
+            head -20 "$s" | grep -q '^name:' || { echo "::error::$s missing name: frontmatter"; fail=1; }
+            head -30 "$s" | grep -q '^description:' || { echo "::error::$s missing description: frontmatter"; fail=1; }
+          done
+          # personal voice docs must never be committed
+          if git ls-files | grep -q 'voice/VOICE\.md$'; then
+            echo "::error::a personal voice/VOICE.md is committed — only VOICE.template.md belongs in git"
+            fail=1
+          fi
+          exit "$fail"
