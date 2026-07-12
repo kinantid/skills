@@ -1,54 +1,81 @@
 # skills
 
 A collection of agent skills in the open `SKILL.md` format. They run in
-[Claude Code](https://claude.com/claude-code), Codex, ChatGPT, Cursor, Gemini
-CLI, and the other tools that read the format.
+[Codex](https://developers.openai.com/codex/skills) (app, CLI, and IDE
+extension), [Claude Code](https://claude.com/claude-code), Cursor, Gemini CLI,
+and the other tools that read the format.
 
 ## Install
 
-### With the `skills` CLI (recommended)
+Pick ONE of these paths.
+
+### Codex app (easiest — no terminal needed)
+
+Open a Codex chat and ask:
+
+> Install the `refine` skill from `kinantid/skills`.
+
+Codex uses its built-in skill installer to add it to your personal skills —
+approve the prompt when it asks to fetch the repository. Then **start a new
+chat**, type `$refine`, and paste a Slack message, email, memo, or any draft.
+
+### Codex from the terminal
+
+Requires [Node.js](https://nodejs.org) (for `npx`). Run:
+
+```sh
+npx skills add kinantid/skills -a codex
+```
+
+Then start a new Codex chat and type `$refine`. You can also just paste a
+draft and ask for feedback — the skill triggers automatically when it fits.
+
+### Claude Code, Cursor, Gemini CLI, and other agents
+
+Requires Node.js. Run:
 
 ```sh
 npx skills add kinantid/skills
 ```
 
-Then pick the skills you want. This is the [skills.sh](https://skills.sh) installer:
-it auto-discovers every skill in `skills/` and installs the ones you select. It
-targets the agent you're using; pass `-a` to be explicit, e.g.
-`npx skills add kinantid/skills -a codex` or `-a cursor`.
+This is the [skills.sh](https://skills.sh) installer: it auto-discovers every
+skill in `skills/` and prompts you to pick the skills and agent (pass
+`-a cursor` etc. to be explicit).
 
-### Or symlink from a clone
+### Clone for local editing and voice calibration
+
+Clone if you want updates via `git pull`, want to edit the skills, or plan to
+keep a personal, gitignored voice doc (see
+[Personalise refine](#personalise-refine-build-a-voice-doc) for why that
+matters):
 
 ```sh
 git clone https://github.com/kinantid/skills.git
 cd skills
-./install.sh
 ```
 
-`install.sh` symlinks every skill under `skills/` into `~/.claude/skills`, so the
-repo stays the single source of truth: editing a file here is immediately live
-in Claude Code, no resync. `git pull` to get updates, re-run `./install.sh` to
-link anything new.
+For **Codex** and other agents that read `~/.agents/skills` (Codex follows
+symlinks):
 
 ```sh
-./install.sh --dry-run   # show what would change, do nothing
-./install.sh --force     # replace an existing real directory at a target path
-```
-
-Set `CLAUDE_SKILLS_DIR` to install somewhere other than `~/.claude/skills`.
-
-For Codex and other agents that read `~/.agents/skills` (Codex follows symlinks),
-link the skill there instead:
-
-```sh
+mkdir -p ~/.agents/skills
 ln -s "$(pwd)/skills/refine" ~/.agents/skills/refine
 ```
 
-**If you build a voice doc, prefer the clone-and-symlink install.** Your
-`voice/VOICE.md` is gitignored, so `git pull` updates the skill without ever
-touching it. Installer-copied skills keep VOICE.md inside the copied directory,
-where an update or reinstall can silently overwrite it — if you use the CLI
-installer, keep a backup of your voice doc outside the install path.
+For **Claude Code**:
+
+```sh
+./install.sh              # symlinks every skill into ~/.claude/skills
+./install.sh --dry-run    # show what would change, do nothing
+./install.sh --force      # replace an existing real directory at a target path
+```
+
+The symlinks make your clone the single source of truth: `git pull` (or a local
+edit) is live immediately, no reinstall — though you may need to start a new
+chat for the agent to pick it up. Set `CLAUDE_SKILLS_DIR` to target somewhere
+other than `~/.claude/skills`. If a symlink command says the file already
+exists, you previously installed by another path — remove that copy first
+(e.g. `rm -rf ~/.agents/skills/refine`), then re-link.
 
 ## Skills
 
@@ -61,12 +88,22 @@ writing to and *where* it lands. Point it at any Slack message, email, memo,
 update, or bit of marketing copy and it diagnoses what's not landing and rewrites
 it, or coaches you through the strategy first.
 
-**To make it sound like you, build a voice doc.** Gather 20-50 samples of your
-real writing across registers (sent emails, LinkedIn posts, Slack/WhatsApp
-messages, docs) and have your agent distill them into `skills/refine/voice/VOICE.md`
-using the committed template (`voice/VOICE.template.md`). The filled-in doc is
+### Personalise refine: build a voice doc
+
+Once refine is installed and you've used it a few times, make it sound like
+you instead of a generic default. Gather 20-50 samples of your real writing
+across registers (sent emails, LinkedIn posts, Slack/WhatsApp messages, docs)
+and have your agent distill them into `skills/refine/voice/VOICE.md` using the
+committed template (`voice/VOICE.template.md`). The filled-in doc is
 gitignored: it's personal, it never leaves your machine. When it exists, the
 skill reads it automatically and it overrides the generic voice defaults.
+
+**Voice-doc users should install via clone-and-symlink** (last install path
+above): because `voice/VOICE.md` is gitignored, `git pull` updates the skill
+without ever touching it. Installer-copied skills keep VOICE.md inside the
+copied directory, where an update or reinstall can silently overwrite it — if
+you used the CLI installer, keep a backup of your voice doc outside the
+install path.
 
 Three things make or break the voice doc:
 
