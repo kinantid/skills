@@ -1,0 +1,19 @@
+{
+  "name": "kinadesy",
+  "interface": {
+    "displayName": "Kinadesy"
+  },
+  "plugins": [
+    {
+      "name": "kinadesy-skills",
+      "source": {
+        "source": "local",
+        "path": "./"
+      },
+      "policy": {
+        "installation": "INSTALLED_BY_DEFAULT"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
