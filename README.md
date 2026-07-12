@@ -22,12 +22,12 @@ and *where* it lands. See [Credits & attribution](#credits--attribution).
 
 ## Install
 
-### Clone & symlink (recommended — protects your voice doc)
+### Clone & symlink (recommended: it protects your voice doc)
 
 These skills are built to be personalised: `refine` reads a gitignored
 `voice/VOICE.md` that you create from your own writing (see
 [Personalise refine](#personalise-refine-build-a-voice-doc)). A clone keeps
-that safe — `git pull` updates the skill and never touches your voice doc,
+that safe: `git pull` updates the skill and never touches your voice doc,
 because it isn't tracked. Installer-copied skills keep VOICE.md inside the
 copy, where an update or reinstall can silently overwrite it.
 
@@ -36,7 +36,7 @@ git clone https://github.com/kinantid/skills.git
 cd skills
 ```
 
-For **Codex** (app, CLI, and IDE extension — reads `~/.agents/skills` and
+For **Codex** (app, CLI, and IDE extension; it reads `~/.agents/skills` and
 follows symlinks):
 
 ```sh
@@ -53,14 +53,14 @@ For **Claude Code**:
 ```
 
 Then **start a new chat**. Type `$refine` (Codex) and paste a Slack message,
-email, memo, or any draft — or just paste a draft and ask for feedback; the
-skill triggers automatically when it fits.
+email, memo, or any draft. Or skip the command: paste a draft, ask for
+feedback, and the skill triggers on its own when it fits.
 
 Your clone is the single source of truth: `git pull` (or a local edit) is live
-immediately, no reinstall — you may need a new chat for the agent to pick it
+immediately, no reinstall. You may need a new chat for the agent to pick it
 up. Set `CLAUDE_SKILLS_DIR` to target somewhere other than `~/.claude/skills`.
 If a symlink command says the file already exists, you previously installed by
-another path — remove that copy first (e.g. `rm -rf ~/.agents/skills/refine`),
+another path. Remove that copy first (e.g. `rm -rf ~/.agents/skills/refine`),
 then re-link.
 
 ### Quick try (no clone)
@@ -68,7 +68,7 @@ then re-link.
 Fine for a first spin; switch to the clone before you build a voice doc.
 
 With [Node.js](https://nodejs.org) installed, run the [skills.sh](https://skills.sh)
-installer — it auto-discovers every skill in `skills/` and prompts you to pick
+installer: it auto-discovers every skill in `skills/` and prompts you to pick
 skills and agent (pass `-a codex`, `-a cursor`, etc. to be explicit):
 
 ```sh
@@ -79,14 +79,14 @@ Or, with no terminal at all, open a Codex chat and ask:
 
 > Install the `refine` skill from `kinantid/skills`.
 
-Codex uses its built-in skill installer — approve the prompt when it asks to
+Codex uses its built-in skill installer; approve the prompt when it asks to
 fetch the repository. Either way, start a new chat and type `$refine`.
 
 ## Skills
 
-- **[refine](skills/refine/SKILL.md)** — communication refinement. Point it at any
+- **[refine](skills/refine/SKILL.md)**: communication refinement. Point it at any
   Slack message, email, memo, update, or bit of marketing copy and it diagnoses
-  what's not landing and rewrites it, or coaches you through the strategy first —
+  what's not landing and rewrites it, or coaches you through the strategy first,
   adapting to *who* you're writing to (CEO, cross-functional, peers,
   customers/marketing) and *where* it lands.
 
@@ -100,11 +100,11 @@ committed template (`voice/VOICE.template.md`). The filled-in doc is
 gitignored: it's personal, it never leaves your machine. When it exists, the
 skill reads it automatically and it overrides the generic voice defaults.
 
-This is why the [recommended install](#clone--symlink-recommended--protects-your-voice-doc)
+This is why the [recommended install](#clone--symlink-recommended-it-protects-your-voice-doc)
 is clone-and-symlink: your voice doc lives in the clone, gitignored, untouched
 by updates. If you quick-tried via the CLI installer instead, switch to the
 clone before building your voice doc (or keep a backup of VOICE.md outside the
-install path — updates and reinstalls can silently overwrite a copy kept
+install path: updates and reinstalls can silently overwrite a copy kept
 inside it).
 
 Three things make or break the voice doc:
