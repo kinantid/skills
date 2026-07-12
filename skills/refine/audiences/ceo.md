@@ -21,8 +21,9 @@ Writing upward to the CEO at your company, other C-suite, board members, or anyo
 3. **One hero number**: lead with the single most important quantitative fact.
 4. **MOO** (most obvious objection): address the first objection they'll have in the same breath. They *will* have one.
 5. **Finesse**: when flagging a risk or bad news, frame the true fact as a managed thing: "here's the risk and here's how it's handled" lands very differently from "this might be a problem". Never spin; just lead with the defensible positive truth. See `principles/finesse.md`.
-6. **Right amount of context**: minimum viable; offer links for more.
-7. **Managing up**: strip apology, hedging, process talk.
+6. **Objective, not detached**: when the news is genuinely bad (incident, slipped date, blown number), give the facts with real numbers, one honest severity signal, and the containment plan. No agentless passive voice, no grovelling. See `principles/objective-not-detached.md`.
+7. **Right amount of context**: minimum viable; offer links for more.
+8. **Managing up**: strip apology, hedging, process talk.
 
 ## What they want to see
 

@@ -63,6 +63,22 @@ One well-chosen example beats three mediocre ones. If example 2 and 3 say the sa
 ### 9. Replace "I feel like" with "I think" or just the statement
 - *"I feel like we should"* → "We should" or "I recommend"
 
+### 10. The three-minute delete pass (word-level)
+
+From Kao's "Take 3 minutes to delete these words". Run this as the final pass on any draft: each of these words is either doing nothing or doing damage.
+
+| Delete | Why | Replace with |
+|---|---|---|
+| "fine" | Sounds like you're not fine | "good", "sounds good", "I'm on board" |
+| "however" | Bureaucratic, melodramatic "but" | "but", or restructure |
+| "unfortunately" | Makes neutral news sound catastrophic; implicitly accepts blame | State it plainly, or "but" |
+| "honestly" / "to be honest" | Implies the rest wasn't | Just say the thing |
+| "just" ("just wanted to…") | Shrinks the sentence and the sender | Delete it |
+| "truly / very / really" (stacked) | Melodrama by intensifier | One stronger word, or none |
+| "no problem" | Diminishes effort you actually spent | "glad it helped", "my pleasure" |
+| double negatives ("not wrong", "nothing but positive") | Two mental reversals | The direct positive ("has a point", "all positive") |
+| "can't until X" | Cedes power; states the closed door | What you CAN do ("I can do Thursday") — see `principles/speak-in-the-affirmative.md` |
+
 ## The concision edit pass
 
 After writing the draft, do one pass where the only goal is to cut 20% of the words without losing meaning. You'll almost always find it. If you can't, you were probably already lean.

@@ -19,7 +19,7 @@ Leads from other functions at your company: eng lead, design lead, GTM / sales l
 1. **MOO**: the single most important principle here. Each function has predictable objections; address theirs specifically.
 2. **Strategy not self-expression**: you're building alignment, not venting. Know what you want from them.
 3. **Right amount of context**: more than CEO (they pressure-test from their lane), less than a teammate.
-4. **Question behind the question**: if they asked you something, decode the real question (often their function's real concern).
+4. **Question behind the question (QBQ)**: if they asked you something, decode the real question (often their function's real concern).
 5. **Finesse**: framing a tradeoff, a cost, or an ask that touches their turf: same facts, honest positive frame. State the constraint (eng cost, support load, timeline) once as something scoped and handled, not as a warning. See `principles/finesse.md`.
 6. **Enthusiastic yes**: you need them to say yes in a way that makes them actively push, not passively agree.
 7. **Managing across**: like managing up, but lateral. Make their job easier.

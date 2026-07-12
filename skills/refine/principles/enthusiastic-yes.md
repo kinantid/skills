@@ -48,6 +48,14 @@ If there's a real consequence to saying no, name it, not as a threat, but as inf
 ### 7. Calibrate the size of the ask
 A tiny ask gets a fast yes. If what you want is too big for an enthusiastic yes, break it into a smaller first step. *"Just sign off on the direction, we can debate the details after."*
 
+### 8. Replace vague urgency with concrete time
+"ASAP", "urgent", "time-sensitive", and "priority" have no fixed meaning: the reader can't tell "next hour" from "this quarter", so they either panic or ignore it. Every vague-urgency word in an ask is a yes-killer, because the recipient can't plan the yes. Swap in one of:
+
+- **A concrete deadline**: "by Thursday EOD", not "soon".
+- **A sequence**: "do X first, then Y; Z can wait until next sprint."
+- **An anti-deadline**: "this one can genuinely wait until next month" (telling people what's *not* urgent buys credibility for when something is).
+- **A default**: "if I don't hear back by 5pm, I'll run with option A." Only for lower-risk, already-aligned decisions, but it converts silence into progress.
+
 ## Before / after
 
 **Before (tepid-yes-inviting):**

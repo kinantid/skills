@@ -48,11 +48,27 @@ writing to and *where* it lands. Point it at any Slack message, email, memo,
 update, or bit of marketing copy and it diagnoses what's not landing and rewrites
 it, or coaches you through the strategy first.
 
-**To make it sound like you, give it samples of your own writing.** Paste a few
-real messages or emails, drop in screenshots of a thread, or point it at an export
-(Slack, email, a Google Doc). It calibrates tone, register, and habitual hedges
-from what you actually write, not from adjectives. Details are in the skill's
-"Voice calibration" section.
+**To make it sound like you, build a voice doc.** Gather 20-50 samples of your
+real writing across registers (sent emails, LinkedIn posts, Slack/WhatsApp
+messages, docs) and have your agent distill them into `skills/refine/voice/VOICE.md`
+using the committed template (`voice/VOICE.template.md`). The filled-in doc is
+gitignored: it's personal, it never leaves your machine. When it exists, the
+skill reads it automatically and it overrides the generic voice defaults.
+
+Three things make or break the voice doc:
+
+1. **Real samples, not adjectives.** "Warm and direct" produces generic prose;
+   ten actual Slack messages produce you.
+2. **Exclude AI-drafted text ruthlessly.** If an assistant wrote it, it isn't
+   your voice; including it bakes AI prose into the spec and defeats the point.
+   Your agent can retrieve candidates (sent mail, post history, chat exports) and
+   you curate: mark each sample as yours, assisted, or not-you before distilling.
+3. **Short-form is ground truth.** Chat messages and quick replies are
+   unambiguously typed by you; polished longform often isn't. Let short-form set
+   the sentence texture and let the skill's principles carry longform structure.
+
+The full workflow (including using a cheap model for bulk extraction) is in the
+skill's "Voice calibration" section.
 
 → **[Read the full skill](skills/refine/SKILL.md)**: the principles, the audience
 playbooks (CEO, cross-functional, peers, customers/marketing), the formats, and

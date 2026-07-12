@@ -86,6 +86,13 @@ Too vague to act on. Peer-warm is fine; peer-useless is not.
 
 In these cases, borrow structure from the cross-functional playbook.
 
+## Giving a peer feedback
+
+Peer feedback is where two small mechanics do most of the work:
+
+- **Speak in the affirmative**: say the target behaviour, not the anti-pattern. "Keep blockers to 2 minutes" beats "don't ramble in standup". If the negative must be said, follow it immediately with the replacement. See `principles/speak-in-the-affirmative.md`.
+- **Invert the but**: if the feedback pairs a fix with genuine praise, put the fix first and let the true positive close, so the encouragement survives. Never invent the positive. See `principles/invert-the-but.md`.
+
 ## Declining or saying no to a peer
 
 When the message is a no (passing on a request, declining to pick something up, turning down an intro), keep it warm without overcommitting: carry the next step yourself, make any offer specific and bounded, and close on one genuine detail. See `principles/the-warm-no.md`.

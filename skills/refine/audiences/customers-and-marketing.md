@@ -21,7 +21,9 @@ Anyone outside your company: customers (existing and prospective), marketing rea
 4. **MOO**: anticipate the objection. External readers have all the objections of a cross-functional lead, without the relationship buffer.
 5. **Concision**: ruthless. No corporate filler.
 6. **Enthusiastic yes**: the "yes" is opening, buying, renewing, clicking, replying.
-7. **Right amount of context**: minimum. Proof → promise → action.
+7. **Speak in the affirmative**: externally, "can't / don't support / not until" language is trust leakage. State what the product CAN do and when; pair with finesse on limits questions. See `principles/speak-in-the-affirmative.md`.
+8. **Objective, not detached** (incidents and apologies): when something actually broke, customers get real numbers, one honest severity line, and the fix — not "we take this very seriously" boilerplate. See `principles/objective-not-detached.md`.
+9. **Right amount of context**: minimum. Proof → promise → action. When pairing a limitation with a capability, close on the capability (invert the but, `principles/invert-the-but.md`).
 
 ## What they want to see
 
