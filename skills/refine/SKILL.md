@@ -1,6 +1,6 @@
 ---
 name: refine
-description: Refine, critique, and coach on written communication using Wes Kao's frameworks (MVB, signposting, question behind the question, MOO, BLUF, concise, strategy-not-self-expression, yellow-spot, managing up, CEO presentation, right amount of context, enthusiastic yes, finesse). Use whenever the user asks to "review this draft", "make this sharper", "help me write a Slack to [CEO/leadership/team]", "draft an email to [customer/CFO/cross-functional lead]", "is this too long", "am I burying the lede", "how do I pitch this", "help me manage up", "critique my message", "make this land", "how should I frame this", or pastes in a draft of any Slack message, email, memo, update, customer-facing note, or marketing copy. Also triggers on "why isn't this landing", "am I being too wordy", "what objection am I missing", "does this make sense to a [CEO/exec/PM/customer]", or any written-communication feedback request. Do NOT use for slide decks or presentations (out of scope for this skill).
+description: Refine, critique, and coach on written communication using Wes Kao's frameworks (MVB, signposting, question behind the question, MOO, BLUF, concise, strategy-not-self-expression, yellow-spot, managing up, CEO presentation, right amount of context, enthusiastic yes, finesse, speak in the affirmative, invert the but, objective not detached). Use whenever the user asks to "review this draft", "make this sharper", "help me write a Slack to [CEO/leadership/team]", "draft an email to [customer/CFO/cross-functional lead]", "is this too long", "am I burying the lede", "how do I pitch this", "help me manage up", "critique my message", "make this land", "how should I frame this", or pastes in a draft of any Slack message, email, memo, update, customer-facing note, or marketing copy. Also triggers on "why isn't this landing", "am I being too wordy", "what objection am I missing", "does this make sense to a [CEO/exec/PM/customer]", or any written-communication feedback request. Do NOT use for slide decks or presentations (out of scope for this skill).
 ---
 
 # Refine: communication refinement (Wes Kao frameworks)
@@ -39,6 +39,9 @@ Core principles (with reference files):
 - **Turn a yellow spot into the sun** → `principles/yellow-spot-into-sun.md`
 - **CEDAF delegation framework** → `principles/cedaf-delegation.md`
 - **Finesse (same facts, better framing, in delicate situations)** → `principles/finesse.md`
+- **Speak in the affirmative (do-this beats don't-do-that)** → `principles/speak-in-the-affirmative.md`
+- **Invert the but ([negative], but [positive])** → `principles/invert-the-but.md`
+- **Be objective, not detached (bad news with calibrated ownership)** → `principles/objective-not-detached.md`
 
 Audience playbooks live in `audiences/`. Format templates live in `formats/`.
 
@@ -83,7 +86,9 @@ Quick selection heuristics:
 - Delegating work / writing a brief or spec → cedaf-delegation, sales-then-logistics, MOO
 - Forecasting, estimating, or stating numbers → accurate-confidence, MOO
 - Declining, rejecting, or saying no while keeping the relationship → the-warm-no, accurate-confidence (receipts before you credit), strategy-not-self-expression
-- Feedback, praise, shout-outs, recommendations → accurate-confidence (receipts before you credit), strategy-not-self-expression, yellow-spot-into-sun
+- Feedback, praise, shout-outs, recommendations → accurate-confidence (receipts before you credit), strategy-not-self-expression, yellow-spot-into-sun, invert-the-but, speak-in-the-affirmative
+- Delivering bad news, incident updates, or an unpopular-but-reasonable decision → objective-not-detached, finesse, MVB
+- Instructions, availability, scheduling, boundaries → speak-in-the-affirmative, concise
 
 ### Step 3: Diagnose before rewriting
 
@@ -95,6 +100,10 @@ Even in refine mode, do a silent diagnosis first. The goal is to know which prin
 - **No anticipation of objections** → reader will push back within 10 seconds of reading. Fix with MOO.
 - **Self-expression not strategy** → the writer is venting, processing, or being clever instead of moving the reader. Fix with strategy-not-self-expression.
 - **Vague ask** → no clear action, decision, or next step. Fix with enthusiastic-yes + concise.
+- **Vague urgency** → "ASAP", "urgent", "time-sensitive" with no date attached. Fix with enthusiastic-yes (concrete deadline, sequence, or a default).
+- **Negative phrasing of instructions or availability** → "don't do X", "I can't until Thursday", double negatives. Fix with speak-in-the-affirmative: state the target behaviour or the "can".
+- **Good news cancelled by "but"** → "[positive], but [negative]" ordering that leaves only the negative ringing. Fix with invert-the-but (when the positive is the honest headline).
+- **Bad news too detached or too apologetic** → either an agentless "an issue occurred" summary with no severity signal, or grovelling that makes the reader manage the writer's guilt. Fix with objective-not-detached: facts + one honest severity line + containment.
 - **Underselling** → a real win is stated flatly. Fix with yellow-spot-into-sun.
 - **Negative framing of true facts** → the writer states accurate information in a way that plants doubt ("we don't have hard limits", "usually fine", "might hit some issues, but…"). The hedges transfer the writer's anxiety to the reader and a true, good answer reads as a warning. Fix with finesse: lead with the capability, state any constraint once as something handled, scrub doubt-words ("don't", "without", "issues", "but", "usually"). Still defensible, never spin.
 - **Wrong amount of context** → either over-explains basics or assumes knowledge the reader doesn't have. Fix with right-amount-of-context.
@@ -163,7 +172,18 @@ If any check fails, revise before delivering.
 
 ## Voice calibration (make it yours)
 
-**Calibrate on real samples, not adjectives.** The single fastest way to make this sound like you is to give it your actual writing to learn from. Before rewriting anything in the user's voice, make sure you have samples:
+**If `voice/VOICE.md` exists, read it in Step 2 alongside the audience and format files, and treat it as the voice spec: it overrides the generic defaults below.** If it doesn't exist and the user asks for a rewrite in their voice, offer to build one (next section) or fall back to asking for samples.
+
+### Build a voice doc (one-time, recommended)
+
+Rather than re-pasting samples every session, distill them once into `voice/VOICE.md` (gitignored: it's personal and never gets committed). Use `voice/VOICE.template.md` as the structure. The workflow:
+
+1. **Gather real samples across registers**: sent emails, LinkedIn posts, Slack and WhatsApp messages, docs. 20-50 pieces is plenty; range matters more than volume (a terse chat message *and* a long email). Exports are ideal (Gmail takeout, LinkedIn posts page, Slack export); screenshots work too.
+2. **Exclude AI-drafted text ruthlessly.** If an assistant wrote or heavily edited it, it is not your voice; including it bakes AI prose into the spec and defeats the point. When unsure about a sample's provenance, prefer older writing or things typed on a phone. Tell the agent which samples are suspect.
+3. **Distill into the template.** Every claim in the doc must be traceable to a sample (the template marks aspirational entries separately). For a large corpus, batch the extraction through a cheap fast model (e.g. Haiku-class subagents summarising per-batch: recurring openers, hedges, sentence stats), then have the main model synthesise the final doc.
+4. **Date-stamp and rebuild** when your role or register changes. A voice doc from two jobs ago is worse than none.
+
+**Calibrate on real samples, not adjectives.** The single fastest way to make this sound like you is to give it your actual writing to learn from. Before rewriting anything in the user's voice, make sure you have samples (or a `voice/VOICE.md` built from them):
 
 - **Paste 3-6 examples** of things they've actually written: Slack messages, emails, a doc, a couple of customer replies. More range is better (a terse Slack *and* a longer email).
 - **Screenshots are fine.** If it's easier to screenshot a thread or a message than copy the text, take the image; read it and work from that.
@@ -239,7 +259,10 @@ refine/
 │   ├── right-amount-of-context.md
 │   ├── yellow-spot-into-sun.md
 │   ├── cedaf-delegation.md
-│   └── finesse.md
+│   ├── finesse.md
+│   ├── speak-in-the-affirmative.md
+│   ├── invert-the-but.md
+│   └── objective-not-detached.md
 ├── audiences/
 │   ├── ceo.md
 │   ├── cross-functional.md
@@ -249,6 +272,9 @@ refine/
 │   ├── slack.md
 │   ├── email.md
 │   └── customer-and-marketing.md
+├── voice/
+│   ├── VOICE.template.md
+│   └── VOICE.md (yours — gitignored, built from your real writing)
 └── scripts/
     └── check-principle-coverage.sh
 ```
