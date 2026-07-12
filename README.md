@@ -37,6 +37,19 @@ link anything new.
 
 Set `CLAUDE_SKILLS_DIR` to install somewhere other than `~/.claude/skills`.
 
+For Codex and other agents that read `~/.agents/skills` (Codex follows symlinks),
+link the skill there instead:
+
+```sh
+ln -s "$(pwd)/skills/refine" ~/.agents/skills/refine
+```
+
+**If you build a voice doc, prefer the clone-and-symlink install.** Your
+`voice/VOICE.md` is gitignored, so `git pull` updates the skill without ever
+touching it. Installer-copied skills keep VOICE.md inside the copied directory,
+where an update or reinstall can silently overwrite it — if you use the CLI
+installer, keep a backup of your voice doc outside the install path.
+
 ## Skills
 
 ### `refine`: communication refinement
