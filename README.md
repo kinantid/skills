@@ -1,13 +1,42 @@
 # skills
 
-A collection of agent skills in the open `SKILL.md` format. They run in
+[![skills.sh](https://skills.sh/b/kinantid/skills)](https://skills.sh/kinantid/skills)
+
+Agent skills for writing that lands, in the open `SKILL.md` format. They run in
+[Claude Code](https://claude.com/claude-code),
 [Codex](https://developers.openai.com/codex/skills) (app, CLI, and IDE
-extension), [Claude Code](https://claude.com/claude-code), Cursor, Gemini CLI,
-and the other tools that read the format.
+extension), Cursor, Gemini CLI, and the other tools that read the format.
+
+## Why use it
+
+Agents write competent prose, and competent is the problem. They bury the lede,
+open with backstory, hedge every claim, and sound like everyone else's agent.
+`refine` encodes the decisions that make a message land instead: what to cut,
+what to lead with, and how to read the room, so a Slack to your CEO or a note to
+a customer reads like you actually meant it.
+
+The frameworks are [Wes Kao](https://www.weskao.com/)'s (BLUF, minimum viable
+backstory, signposting, most obvious objection, "sales then logistics", the warm
+no, and more), restated as working aids and adapted to *who* you're writing to
+and *where* it lands. See [Credits & attribution](#credits--attribution).
 
 ## Install
 
-Pick ONE of these paths.
+Pick ONE path.
+
+### The one-liner (Claude Code, Cursor, Gemini CLI, most agents)
+
+Requires [Node.js](https://nodejs.org) (for `npx`). Run:
+
+```sh
+npx skills add kinantid/skills
+```
+
+This is the [skills.sh](https://skills.sh) installer: it auto-discovers every
+skill in `skills/` and prompts you to pick the skills and agent (pass `-a codex`,
+`-a cursor`, etc. to be explicit). Then start a new chat — the skill triggers
+automatically when it fits, or you can invoke it (`$refine` in Codex) and paste a
+draft.
 
 ### Codex app (easiest — no terminal needed)
 
@@ -18,29 +47,6 @@ Open a Codex chat and ask:
 Codex uses its built-in skill installer to add it to your personal skills —
 approve the prompt when it asks to fetch the repository. Then **start a new
 chat**, type `$refine`, and paste a Slack message, email, memo, or any draft.
-
-### Codex from the terminal
-
-Requires [Node.js](https://nodejs.org) (for `npx`). Run:
-
-```sh
-npx skills add kinantid/skills -a codex
-```
-
-Then start a new Codex chat and type `$refine`. You can also just paste a
-draft and ask for feedback — the skill triggers automatically when it fits.
-
-### Claude Code, Cursor, Gemini CLI, and other agents
-
-Requires Node.js. Run:
-
-```sh
-npx skills add kinantid/skills
-```
-
-This is the [skills.sh](https://skills.sh) installer: it auto-discovers every
-skill in `skills/` and prompts you to pick the skills and agent (pass
-`-a cursor` etc. to be explicit).
 
 ### Clone for local editing and voice calibration
 
@@ -54,20 +60,20 @@ git clone https://github.com/kinantid/skills.git
 cd skills
 ```
 
-For **Codex** and other agents that read `~/.agents/skills` (Codex follows
-symlinks):
-
-```sh
-mkdir -p ~/.agents/skills
-ln -s "$(pwd)/skills/refine" ~/.agents/skills/refine
-```
-
 For **Claude Code**:
 
 ```sh
 ./install.sh              # symlinks every skill into ~/.claude/skills
 ./install.sh --dry-run    # show what would change, do nothing
 ./install.sh --force      # replace an existing real directory at a target path
+```
+
+For **Codex** and other agents that read `~/.agents/skills` (Codex follows
+symlinks):
+
+```sh
+mkdir -p ~/.agents/skills
+ln -s "$(pwd)/skills/refine" ~/.agents/skills/refine
 ```
 
 The symlinks make your clone the single source of truth: `git pull` (or a local
@@ -79,14 +85,11 @@ exists, you previously installed by another path — remove that copy first
 
 ## Skills
 
-### `refine`: communication refinement
-
-Refine, critique, and coach on written communication using [Wes Kao](https://www.weskao.com/)'s
-frameworks (BLUF, minimum viable backstory, signposting, most obvious objection,
-"sales then logistics", finesse, the warm no, and more), adapted to *who* you're
-writing to and *where* it lands. Point it at any Slack message, email, memo,
-update, or bit of marketing copy and it diagnoses what's not landing and rewrites
-it, or coaches you through the strategy first.
+- **[refine](skills/refine/SKILL.md)** — communication refinement. Point it at any
+  Slack message, email, memo, update, or bit of marketing copy and it diagnoses
+  what's not landing and rewrites it, or coaches you through the strategy first —
+  adapting to *who* you're writing to (CEO, cross-functional, peers,
+  customers/marketing) and *where* it lands.
 
 ### Personalise refine: build a voice doc
 
