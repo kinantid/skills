@@ -22,42 +22,26 @@ and *where* it lands. See [Credits & attribution](#credits--attribution).
 
 ## Install
 
-Pick ONE path.
+### Clone & symlink (recommended — protects your voice doc)
 
-### The one-liner (Claude Code, Cursor, Gemini CLI, most agents)
-
-Requires [Node.js](https://nodejs.org) (for `npx`). Run:
-
-```sh
-npx skills add kinantid/skills
-```
-
-This is the [skills.sh](https://skills.sh) installer: it auto-discovers every
-skill in `skills/` and prompts you to pick the skills and agent (pass `-a codex`,
-`-a cursor`, etc. to be explicit). Then start a new chat — the skill triggers
-automatically when it fits, or you can invoke it (`$refine` in Codex) and paste a
-draft.
-
-### Codex app (easiest — no terminal needed)
-
-Open a Codex chat and ask:
-
-> Install the `refine` skill from `kinantid/skills`.
-
-Codex uses its built-in skill installer to add it to your personal skills —
-approve the prompt when it asks to fetch the repository. Then **start a new
-chat**, type `$refine`, and paste a Slack message, email, memo, or any draft.
-
-### Clone for local editing and voice calibration
-
-Clone if you want updates via `git pull`, want to edit the skills, or plan to
-keep a personal, gitignored voice doc (see
-[Personalise refine](#personalise-refine-build-a-voice-doc) for why that
-matters):
+These skills are built to be personalised: `refine` reads a gitignored
+`voice/VOICE.md` that you create from your own writing (see
+[Personalise refine](#personalise-refine-build-a-voice-doc)). A clone keeps
+that safe — `git pull` updates the skill and never touches your voice doc,
+because it isn't tracked. Installer-copied skills keep VOICE.md inside the
+copy, where an update or reinstall can silently overwrite it.
 
 ```sh
 git clone https://github.com/kinantid/skills.git
 cd skills
+```
+
+For **Codex** (app, CLI, and IDE extension — reads `~/.agents/skills` and
+follows symlinks):
+
+```sh
+mkdir -p ~/.agents/skills
+ln -s "$(pwd)/skills/refine" ~/.agents/skills/refine
 ```
 
 For **Claude Code**:
@@ -68,20 +52,35 @@ For **Claude Code**:
 ./install.sh --force      # replace an existing real directory at a target path
 ```
 
-For **Codex** and other agents that read `~/.agents/skills` (Codex follows
-symlinks):
+Then **start a new chat**. Type `$refine` (Codex) and paste a Slack message,
+email, memo, or any draft — or just paste a draft and ask for feedback; the
+skill triggers automatically when it fits.
+
+Your clone is the single source of truth: `git pull` (or a local edit) is live
+immediately, no reinstall — you may need a new chat for the agent to pick it
+up. Set `CLAUDE_SKILLS_DIR` to target somewhere other than `~/.claude/skills`.
+If a symlink command says the file already exists, you previously installed by
+another path — remove that copy first (e.g. `rm -rf ~/.agents/skills/refine`),
+then re-link.
+
+### Quick try (no clone)
+
+Fine for a first spin; switch to the clone before you build a voice doc.
+
+With [Node.js](https://nodejs.org) installed, run the [skills.sh](https://skills.sh)
+installer — it auto-discovers every skill in `skills/` and prompts you to pick
+skills and agent (pass `-a codex`, `-a cursor`, etc. to be explicit):
 
 ```sh
-mkdir -p ~/.agents/skills
-ln -s "$(pwd)/skills/refine" ~/.agents/skills/refine
+npx skills add kinantid/skills
 ```
 
-The symlinks make your clone the single source of truth: `git pull` (or a local
-edit) is live immediately, no reinstall — though you may need to start a new
-chat for the agent to pick it up. Set `CLAUDE_SKILLS_DIR` to target somewhere
-other than `~/.claude/skills`. If a symlink command says the file already
-exists, you previously installed by another path — remove that copy first
-(e.g. `rm -rf ~/.agents/skills/refine`), then re-link.
+Or, with no terminal at all, open a Codex chat and ask:
+
+> Install the `refine` skill from `kinantid/skills`.
+
+Codex uses its built-in skill installer — approve the prompt when it asks to
+fetch the repository. Either way, start a new chat and type `$refine`.
 
 ## Skills
 
@@ -101,12 +100,12 @@ committed template (`voice/VOICE.template.md`). The filled-in doc is
 gitignored: it's personal, it never leaves your machine. When it exists, the
 skill reads it automatically and it overrides the generic voice defaults.
 
-**Voice-doc users should install via clone-and-symlink** (last install path
-above): because `voice/VOICE.md` is gitignored, `git pull` updates the skill
-without ever touching it. Installer-copied skills keep VOICE.md inside the
-copied directory, where an update or reinstall can silently overwrite it — if
-you used the CLI installer, keep a backup of your voice doc outside the
-install path.
+This is why the [recommended install](#clone--symlink-recommended--protects-your-voice-doc)
+is clone-and-symlink: your voice doc lives in the clone, gitignored, untouched
+by updates. If you quick-tried via the CLI installer instead, switch to the
+clone before building your voice doc (or keep a backup of VOICE.md outside the
+install path — updates and reinstalls can silently overwrite a copy kept
+inside it).
 
 Three things make or break the voice doc:
 
