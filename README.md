@@ -89,6 +89,15 @@ fetch the repository. Either way, start a new chat and type `$refine`.
   what's not landing and rewrites it, or coaches you through the strategy first,
   adapting to *who* you're writing to (CEO, cross-functional, peers,
   customers/marketing) and *where* it lands.
+- **[ux-writing](skills/ux-writing/SKILL.md)**: interface copy (microcopy).
+  Buttons, error messages, empty states, forms, confirmations, notifications -
+  the text people read mid-task. Built on Torrey Podmajersky's four quality
+  standards and the MIT-licensed
+  [content-designer/ux-writing-skill](https://github.com/content-designer/ux-writing-skill),
+  with Jenni Nadler's Wix error-message anatomy and in-product conventions
+  (punctuation, length targets, verb precision) folded in. Personalise it with
+  a gitignored `product/PRODUCT.md` overlay (terminology, house style, brand
+  voice pointer) - same idea as refine's voice doc: `git pull` never touches it.
 
 ### Personalise refine: build a voice doc
 
