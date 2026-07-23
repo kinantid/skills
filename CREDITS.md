@@ -16,6 +16,10 @@ project.
 | **Marc Randolph** | "Plausible linkage" (answering the question you want to answer), referenced in finesse. | [marcrandolph.com](https://www.marcrandolph.com/) |
 | **Lenny Rachitsky (Lenny's Newsletter)** | Venue for the Wes Kao interview several principles draw on. | [lennysnewsletter.com](https://www.lennysnewsletter.com/) |
 | **John G. Miller** | Referenced only for accurate attribution: *QBQ® / The Question Behind the Question* is his trademark and book. This repo does not use that material. | [qbq.com](https://qbq.com/) |
+| **Torrey Podmajersky** | The `ux-writing` skill's spine: the four quality standards (purposeful, concise, conversational, clear), the voice-chart approach, and the pattern-by-surface framing, from *Strategic Writing for UX* (O'Reilly). | [torreybird.com](https://torreybird.com/) — buy the book |
+| **content-designer (ux-writing-skill)** | The MIT-licensed skill the `ux-writing` skill builds on: pattern taxonomy, benchmarks compilation, accessibility guidance, tone-by-emotional-state model. | [github.com/content-designer/ux-writing-skill](https://github.com/content-designer/ux-writing-skill) |
+| **Jenni Nadler (Wix UX)** | The error-message anatomy in `ux-writing`: say what happened and why, reassure on what wasn't affected, help them fix it, always give a way out; the four bad-error smells; generic vs unclear; challenging generic errors. From "When life gives you lemons, write better error messages" (2022). | [wix-ux.com](https://wix-ux.com/when-life-gives-you-lemons-write-better-error-messages-46c5223e1a2f) |
+| **American Press Institute** | The sentence-length comprehension figures cited in the benchmarks (via the ux-writing-skill compilation). | [americanpressinstitute.org](https://www.americanpressinstitute.org/) |
 
 ## Convention for adding a principle from a source
 

@@ -1,8 +1,8 @@
 NOTICE
 ======
 
-This repository packages a set of written-communication frameworks as a Claude
-Code skill (`skills/refine`).
+This repository packages a set of written-communication frameworks as agent
+skills (`skills/refine`, `skills/ux-writing`).
 
 Attribution
 -----------
@@ -11,6 +11,17 @@ The frameworks referenced in the `refine` skill are the work of Wes Kao
 credits its source. This project is an independent, unofficial restatement and
 adaptation of those ideas in original wording. It is NOT affiliated with,
 endorsed by, sponsored by, or reviewed by Wes Kao.
+
+The `ux-writing` skill is a consolidation with three primary sources:
+- content-designer/ux-writing-skill (MIT licensed;
+  https://github.com/content-designer/ux-writing-skill) — portions of the
+  pattern taxonomy, benchmarks, accessibility guidance, and tone model derive
+  from it under its MIT license.
+- Torrey Podmajersky's "Strategic Writing for UX" — the four quality standards
+  and pattern framing originate with her work; restated, not reproduced.
+- Jenni Nadler's "When life gives you lemons, write better error messages"
+  (Wix UX, 2022) — the error-message anatomy; restated, not reproduced. Not
+  affiliated with or endorsed by Wix or the author.
 
 Some referenced ideas originate with other authors and are credited accordingly,
 including:
