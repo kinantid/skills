@@ -2,6 +2,12 @@
 
 # Personal voice specs are private — template is committed, the filled-in doc is not
 skills/*/voice/VOICE.md
+skills/*/voice/blocklist.txt
+skills/*/voice/pairs.md
+
+# Personal context is private: template is committed, everything else in context/ is not
+skills/*/context/*
+!skills/*/context/*.template.md
 
 # Product overlays are per-machine — template is committed, the filled-in doc is not
 skills/*/product/PRODUCT.md

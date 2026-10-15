@@ -1,303 +1,239 @@
 ---
 name: refine
-description: Refine, critique, and coach on written communication using Wes Kao's frameworks (MVB, signposting, question behind the question, MOO, BLUF, concise, strategy-not-self-expression, yellow-spot, managing up, CEO presentation, right amount of context, enthusiastic yes, finesse, speak in the affirmative, invert the but, objective not detached). Use whenever the user asks to "review this draft", "make this sharper", "help me write a Slack to [CEO/leadership/team]", "draft an email to [customer/CFO/cross-functional lead]", "is this too long", "am I burying the lede", "how do I pitch this", "help me manage up", "critique my message", "make this land", "how should I frame this", or pastes in a draft of any Slack message, email, memo, update, customer-facing note, or marketing copy. Also triggers on "why isn't this landing", "am I being too wordy", "what objection am I missing", "does this make sense to a [CEO/exec/PM/customer]", or any written-communication feedback request. Do NOT use for slide decks or presentations (out of scope for this skill).
+description: Draft, refine, critique, or coach written communication (Slack, email, memo, update, customer note, marketing copy) in the user's own voice, using Wes Kao's frameworks (BLUF, MOO, minimum viable backstory, finesse, managing up). Use when the user pastes a draft, asks to write a message for a specific reader, asks whether something lands, or shares the version they actually sent (retro). Not for slide decks.
 ---
 
-# Refine: communication refinement (Wes Kao frameworks)
+# Refine: communication in your voice
 
-This skill helps you sharpen written communication for three format families (Slack/chat, email/written updates, and customer/marketing copy) across four audiences: the CEO, cross-functional leads, product teammates, and external customers/marketing readers. It applies Wes Kao's communication frameworks, adapted for a product context at your company.
+Sharpens written communication for three format families (Slack/chat, email/written updates, customer/marketing copy) across four audiences (CEO, cross-functional leads, peers, customers). The strategy comes from Wes Kao's frameworks and the other sources in `CREDITS.md` at the repo root; the voice comes from the user's own writing.
 
-## When to use this skill
+## Personal layer: read first
 
-Trigger on any of:
+Two optional, gitignored files make this skill the user's rather than generic. When they exist, read both before Step 1 on every run. They override every generic default in this file.
 
-- The user pastes a draft and asks for feedback, edits, or a rewrite.
-- The user asks to draft something from scratch for a specific audience (CEO, cross-functional lead, teammate, customer).
-- The user asks a meta-question about their communication ("am I being too vague?", "is this landing?", "what's the risk here?").
+- `voice/VOICE.md`: how the user actually writes, distilled from real samples (tone, rhythm, openers, hedges, punctuation, verbatim snippets). Match it. If it's missing and the user wants output in their voice, offer to build one (`voice/BUILDING.md`) or ask for 3-6 real samples first; a rewrite guessed from adjectives reads generic.
+- `context/CONTEXT.md`: who the user is and where they work (role, company, locale, people by role, house terms, extra formats). If it names a locale, pass it to the linter (e.g. `--au`).
 
-Do **not** use this skill for slide decks, pitch decks, or live verbal presentations. If the user needs those, say so and point them at a presentation-focused skill.
+## Principles
 
-## What this skill actually does
+Read only the 2-3 that matter for the piece, never all of them.
 
-It applies a small, opinionated set of Wes Kao principles, not all of them at once, and not mechanically. The goal is sharper communication, not a checklist. The principles live in `principles/` as reference files. Read the ones relevant to the task, not all of them.
-
-Core principles (with reference files):
-
-- **Minimum Viable Backstory (start right before you get eaten by the bear)** → `principles/minimum-viable-backstory.md`
-- **Signposting (reduce cognitive load)** → `principles/signposting.md`
+- **Minimum viable backstory** (start right before you get eaten by the bear) → `principles/minimum-viable-backstory.md`
+- **Signposting** (reduce cognitive load) → `principles/signposting.md`
 - **Answer the question behind the question** → `principles/qbq.md`
-- **Most Obvious Objection (MOO)** → `principles/moo.md`
+- **Most obvious objection (MOO)** → `principles/moo.md`
 - **Sales, then logistics** → `principles/sales-then-logistics.md`
-- **Accurate confidence** → `principles/accurate-confidence.md`
+- **Accurate confidence** (incl. receipts before you credit) → `principles/accurate-confidence.md`
 - **How to be concise** → `principles/how-to-be-concise.md`
-- **How to get an enthusiastic yes** → `principles/enthusiastic-yes.md`
-- **The warm no (declining while keeping the relationship)** → `principles/the-warm-no.md`
+- **Enthusiastic yes** → `principles/enthusiastic-yes.md`
+- **The warm no** → `principles/the-warm-no.md`
 - **Managing up** → `principles/managing-up.md`
 - **Strategy not self-expression** → `principles/strategy-not-self-expression.md`
 - **Presenting to your CEO** → `principles/present-to-ceo.md`
 - **Right amount of context** → `principles/right-amount-of-context.md`
 - **Turn a yellow spot into the sun** → `principles/yellow-spot-into-sun.md`
-- **CEDAF delegation framework** → `principles/cedaf-delegation.md`
-- **Finesse (same facts, better framing, in delicate situations)** → `principles/finesse.md`
-- **Speak in the affirmative (do-this beats don't-do-that)** → `principles/speak-in-the-affirmative.md`
-- **Invert the but ([negative], but [positive])** → `principles/invert-the-but.md`
-- **Be objective, not detached (bad news with calibrated ownership)** → `principles/objective-not-detached.md`
+- **CEDAF delegation** → `principles/cedaf-delegation.md`
+- **Finesse** (same facts, better framing) → `principles/finesse.md`
+- **Speak in the affirmative** → `principles/speak-in-the-affirmative.md`
+- **Invert the but** → `principles/invert-the-but.md`
+- **Objective, not detached** (bad news with calibrated ownership) → `principles/objective-not-detached.md`
 
-Audience playbooks live in `audiences/`. Format templates live in `formats/`.
+Audience playbooks live in `audiences/`, format templates in `formats/`, and any personal formats in `context/`.
 
 ## Workflow
 
-When the user brings something to this skill, follow this sequence. Don't skip steps, but don't belabor them either: the user wants the refined output, not a lecture.
-
 ### Step 1: Identify mode, audience, and format
 
-Before touching the draft, figure out three things. If any one of them is unclear from context, ask. Ask them together, not one at a time, so the user doesn't have to ping-pong.
+If any of the three is unclear from context, ask about all the unclear ones in a single message.
 
-1. **Mode**: what does the user actually want?
-   - **Critique**: "tell me what's wrong, I'll fix it." Return a structured diagnosis; don't rewrite.
-   - **Refine**: "rewrite this." Return a rewritten draft, with a short note on what changed and why.
-   - **Coach**: "help me think through this." Ask one or two sharp questions before drafting, so the strategy is clear before the words.
-   - **Default**: if the user pastes a draft without specifying, do **refine** and attach a short critique. If the user asks a "should I…" or "how do I…" question without a draft, do **coach** first.
+1. **Mode**:
+   - **Critique**: diagnose; leave the rewriting to the user.
+   - **Refine**: rewrite, with a short note on what changed and why.
+   - **Coach**: ask one or two sharp questions to settle the strategy, then draft.
+   - **Retro**: the user shares what they actually sent (or edited) after a draft from this skill. Go to [Retro mode](#retro-mode-learn-from-what-was-sent).
+   - **Default**: a pasted draft with no instruction gets **refine** plus a short critique. A "should I…" or "how do I…" question with no draft gets **coach**.
 
-2. **Audience**: who is this for? Use the playbook:
-   - CEO / exec / board → `audiences/ceo.md` (**strict** application)
-   - Cross-functional lead (eng lead, GTM lead, CFO, CS lead) → `audiences/cross-functional.md` (**strict** application)
-   - Product teammate / peer → `audiences/peers.md` (**relaxed** application)
-   - Customer / marketing reader → `audiences/customers-and-marketing.md` (**strict** application: external-facing is always high-stakes)
+2. **Audience** → playbook and strictness:
+   - CEO / exec / board → `audiences/ceo.md` (strict)
+   - Cross-functional lead (eng, GTM, CFO, CS) → `audiences/cross-functional.md` (strict)
+   - Product teammate / peer → `audiences/peers.md` (relaxed)
+   - Customer / marketing reader → `audiences/customers-and-marketing.md` (strict: external is always high-stakes)
 
-3. **Format**: where does this land?
+3. **Format**:
    - Slack / chat → `formats/slack.md`
-   - Email / written update / memo / Notion doc → `formats/email.md`
-   - Customer-facing copy or marketing copy → `formats/customer-and-marketing.md`
+   - Email / written update / memo / doc → `formats/email.md`
+   - Customer-facing or marketing copy → `formats/customer-and-marketing.md`
+   - Anything `context/CONTEXT.md` lists as a personal format → the file it points to
 
 ### Step 2: Load the right references
 
-Based on mode + audience + format, read the audience playbook, the format template, and the 2-3 principles that matter most for this specific piece. Don't read every principle every time: that bloats context and dilutes the feedback.
-
-Quick selection heuristics:
+Read the personal layer (if present), the audience playbook, the format file, and the 2-3 principles that matter most:
 
 - Pitching a decision, ask, or recommendation → MOO, enthusiastic-yes, strategy-not-self-expression, sales-then-logistics
 - Status update or retro → MVB, signposting, yellow-spot-into-sun, right-amount-of-context, accurate-confidence
 - Answering an exec question → question behind the question, concise, MVB, accurate-confidence
 - Managing up to CEO or board → managing-up, present-to-ceo, MOO, sales-then-logistics
 - Customer / marketing copy → strategy-not-self-expression, enthusiastic-yes, concise, yellow-spot-into-sun, finesse
-- Answering a delicate / loaded question (limits, pricing, "can you do X?", anything where the bare fact could be misread) → finesse, qbq, strategy-not-self-expression
-- Slack to a peer / teammate → concise, MVB (but dialed down)
-- Delegating work / writing a brief or spec → cedaf-delegation, sales-then-logistics, MOO
-- Forecasting, estimating, or stating numbers → accurate-confidence, MOO
-- Declining, rejecting, or saying no while keeping the relationship → the-warm-no, accurate-confidence (receipts before you credit), strategy-not-self-expression
-- Feedback, praise, shout-outs, recommendations → accurate-confidence (receipts before you credit), strategy-not-self-expression, yellow-spot-into-sun, invert-the-but, speak-in-the-affirmative
-- Delivering bad news, incident updates, or an unpopular-but-reasonable decision → objective-not-detached, finesse, MVB
+- Delicate or loaded question (limits, pricing, "can you do X?") → finesse, qbq, strategy-not-self-expression
+- Slack to a peer → concise, MVB (dialled down)
+- Delegating, writing a brief or spec → cedaf-delegation, sales-then-logistics, MOO
+- Forecasts, estimates, numbers → accurate-confidence, MOO
+- Saying no while keeping the relationship → the-warm-no, accurate-confidence, strategy-not-self-expression
+- Feedback, praise, shout-outs, recommendations → accurate-confidence, strategy-not-self-expression, yellow-spot-into-sun, invert-the-but, speak-in-the-affirmative
+- Bad news, incidents, unpopular-but-reasonable decisions → objective-not-detached, finesse, MVB
 - Instructions, availability, scheduling, boundaries → speak-in-the-affirmative, concise
 
 ### Step 3: Diagnose before rewriting
 
-Even in refine mode, do a silent diagnosis first. The goal is to know which principles the draft is violating before touching the words. Look for these patterns (they come up constantly):
+Even in refine mode, diagnose silently first so you know which principles the draft breaks. The recurring patterns:
 
-- **Buried lede** → the main point is in paragraph 3, not sentence 1. Fix with BLUF + signposting.
-- **Too much backstory** → the writer starts with setup instead of the point. Fix with MVB.
-- **Asking the literal question, not the real one** → the writer is answering what was asked, not what's actually being asked. Fix with question behind the question.
-- **No anticipation of objections** → reader will push back within 10 seconds of reading. Fix with MOO.
-- **Self-expression not strategy** → the writer is venting, processing, or being clever instead of moving the reader. Fix with strategy-not-self-expression.
-- **Vague ask** → no clear action, decision, or next step. Fix with enthusiastic-yes + concise.
-- **Vague urgency** → "ASAP", "urgent", "time-sensitive" with no date attached. Fix with enthusiastic-yes (concrete deadline, sequence, or a default).
-- **Negative phrasing of instructions or availability** → "don't do X", "I can't until Thursday", double negatives. Fix with speak-in-the-affirmative: state the target behaviour or the "can".
-- **Good news cancelled by "but"** → "[positive], but [negative]" ordering that leaves only the negative ringing. Fix with invert-the-but (when the positive is the honest headline).
-- **Bad news too detached or too apologetic** → either an agentless "an issue occurred" summary with no severity signal, or grovelling that makes the reader manage the writer's guilt. Fix with objective-not-detached: facts + one honest severity line + containment.
-- **Underselling** → a real win is stated flatly. Fix with yellow-spot-into-sun.
-- **Negative framing of true facts** → the writer states accurate information in a way that plants doubt ("we don't have hard limits", "usually fine", "might hit some issues, but…"). The hedges transfer the writer's anxiety to the reader and a true, good answer reads as a warning. Fix with finesse: lead with the capability, state any constraint once as something handled, scrub doubt-words ("don't", "without", "issues", "but", "usually"). Still defensible, never spin.
-- **Wrong amount of context** → either over-explains basics or assumes knowledge the reader doesn't have. Fix with right-amount-of-context.
-- **Performative praise / emotion labelling** → the draft names a reaction ("stuck with us", "we loved", "genuinely impressive", "that's the kind of X we look for") instead of the concrete observation underneath it. Fix with strategy-not-self-expression (emotional signalling serves the writer, not the reader) + yellow-spot-into-sun (lead with the concrete proof, drop the label). The reader infers the value from the specific; they don't need to be told they did well.
-- **Warmth that distorts the substance** → kind framing that quietly misrepresents the standard. "The visual judgement is already there, just point it at the code" reframed an engineering role as design-plus-a-bit: flattering, but it moved the goalposts. Fix with strategy-not-self-expression: be kind about the person, accurate about the bar. Warmth shouldn't change what's true.
-- **Instructing what they already did** → telling someone to develop a skill they just demonstrated reads as not having paid attention. Before any "the next level is X" advice, check they didn't already show X. If they did, credit it and push to make it *systematic* ("you did this with Mapbox; the step up is doing it by default, not case by case").
+- **Buried lede**: the main point sits in paragraph 3. → BLUF + signposting.
+- **Too much backstory**: setup before the point. → MVB.
+- **Answering the literal question**: the real question is underneath. → question behind the question.
+- **Unanticipated objection**: the reader will push back within 10 seconds. → MOO.
+- **Self-expression over strategy**: venting, processing, or being clever instead of moving the reader. → strategy-not-self-expression.
+- **Vague ask or vague urgency**: no clear action, or "ASAP" with no date. → enthusiastic-yes (concrete deadline, sequence, or default).
+- **Negative phrasing**: "don't do X", "I can't until Thursday". → speak-in-the-affirmative: state the target behaviour or the "can".
+- **Good news cancelled by "but"**. → invert-the-but, when the positive is the honest headline.
+- **Bad news too detached or too apologetic**. → objective-not-detached: facts, one honest severity line, containment.
+- **Underselling a real win**. → yellow-spot-into-sun.
+- **True facts framed as warnings** ("we don't have hard limits", "usually fine"). → finesse: lead with the capability, state the constraint once as handled.
+- **Wrong amount of context**. → right-amount-of-context.
+- **Performative praise or emotion labelling** ("we loved", "that's the kind of X we look for"). → state the concrete observation and stop; the specific is the praise.
+- **Warmth that distorts the substance**: kind framing that quietly moves the bar. → be kind about the person, accurate about the bar.
+- **Instructing what they already did**: advice to build a skill they just showed. → credit it and push to make it systematic.
 
-### Step 4: Apply strictness based on audience
+### Step 4: Apply strictness
 
-Not every piece of writing needs full Kao treatment. Strictness ladder:
+- **Strict** (CEO, cross-functional, customer, marketing): apply principles hard, rewrite freely, insist on BLUF, MOO, and an explicit ask.
+- **Relaxed** (peer, casual Slack): cut obvious bloat and keep the warmth and voice. A casual Slack needs to be human more than it needs a BLUF.
 
-- **Strict** (CEO, cross-functional lead, customer, marketing): apply principles hard. Rewrite freely. Flag anything that could cause a misread, a pushback, or a lost deal. Insist on BLUF, MOO, and an explicit ask.
-- **Relaxed** (product teammate, peer, casual Slack): apply principles lightly. Don't sand off the user's voice or warmth. A casual Slack to a teammate doesn't need a BLUF, it needs to be human. Cut obvious bloat; leave the rest.
+Unsure? Up, across, or external → strict. A teammate you work with daily → relaxed.
 
-If you're unsure, lean strict for anything external or upward, relaxed for anything internal or lateral. When in doubt, ask: "is this going up, across, or to a customer?" If yes → strict. "Is this to a teammate you work with daily?" If yes → relaxed.
+### Step 5: Deliver
 
-### Step 5: Deliver the output
-
-Follow the mode:
-
-**Critique mode output:**
+**Critique:**
 ```
-What's working: [1-2 things done well, specific]
-What's not landing: [2-4 specific issues, each tied to a Kao principle]
-The real problem: [one sentence: the single biggest issue to fix]
-Suggested path: [one paragraph: how you'd attack the rewrite]
+What's working: [1-2 specific things]
+What's not landing: [2-4 issues, each tied to a principle]
+The real problem: [one sentence]
+Suggested path: [one paragraph]
 ```
 
-**Refine mode output:**
+**Refine:**
 ```
 Rewritten draft:
-[the rewrite, formatted for the target channel]
+[the rewrite, formatted for the channel]
 
 What changed and why:
-- [change]: [the Kao principle it fixes, in one line]
-- [change]: [principle]
-- [change]: [principle]
+- [change]: [principle, one line]
 ```
 
-Keep the "what changed" list to 3-5 items. If there are more, the draft needed a structural rethink, not edits. Say so.
+Keep "what changed" to 3-5 items. More than that means the draft needs a structural rethink; say so.
 
-**Coach mode output:**
+**Coach:**
 ```
-Before I draft, I want to make sure we've got the strategy right. Two questions:
-1. [question targeting the question behind the question: what does the reader actually need to decide/do?]
-2. [question targeting the MOO or the ask: what's the objection you're most worried about? / what's the single outcome you want?]
-
-Once you answer, I'll draft.
+Before I draft, two questions:
+1. [the question behind the question: what does the reader need to decide or do?]
+2. [the MOO or the ask: what objection worries you most / what single outcome do you want?]
 ```
 
-If the user has already answered these in context, skip straight to draft.
+Skip straight to the draft when the context already answers these.
 
-### Step 6: Self-check before sending
+### Step 6: Check before sending
 
-Before returning the output, run through this seven-item check silently:
+1. **Run the linter** on the output (save the draft to a temp file, or pipe it): `scripts/lint.sh [--au] draft.md`. It catches the mechanical tells deterministically: dashes, announced honesty, performative praise, filler hedges, the user's personal blocklist, and (with `--au`) US spellings. Fix every finding, or keep it deliberately when it's inside a quotation.
+2. **Lead**: the first sentence carries the point or the ask (strict), or the second at the latest (relaxed).
+3. **Objection**: a sceptical reader's first pushback is answered in the first paragraph.
+4. **Concision**: every remaining sentence earns its place.
+5. **Voice**: it reads like the samples in `voice/VOICE.md`: the user's sentence length, openers, and register for this audience.
+6. **Ask**: the next action, owner, and date are clear.
+7. **Receipts** (when crediting or characterising someone): every specific claim traces to a source you can point to; soften or cut the rest.
 
-1. **BLUF check**: does the first sentence carry the main point or ask? (Strict audiences: yes. Relaxed: at least by sentence 2.)
-2. **MOO check**: would a skeptical reader have an objection the draft doesn't address in the first paragraph? If so, fix.
-3. **Concision check**: can any sentence be cut without losing meaning? Cut it.
-4. **Voice check**: does it sound like you, or does it sound like a LinkedIn post? Aim for direct, warm, and dry. Avoid corporate-speak, hedging, and filler ("just wanted to circle back", "hope this finds you well", "I think maybe we could perhaps consider").
-5. **Ask check**: is the next action clear? If not, add it.
-6. **AI-tell sweep**: scan for performative praise labels ("that's the kind of thinking we look for", "X stuck with us"), announced honesty ("honestly", "genuinely", "one honest note"), em dashes and spaced hyphens (" - "), and emotion-labelling ("we loved", "so excited"). Cut them. If a sentence's only job is to tell the reader how to feel about the previous sentence, delete it.
-7. **Receipts check** (when the piece credits or characterises someone): can you point to the source for each specific claim? Kill or soften anything you can't. A compliment that's wrong costs more credibility than no compliment.
+Revise until all seven pass.
 
-If any check fails, revise before delivering.
+## Retro mode: learn from what was sent
 
-## Voice calibration (make it yours)
+This is how the skill learns the user's voice over time. Trigger: the user pastes what they actually sent, edits your draft before sending, or says "retro".
 
-**If `voice/VOICE.md` exists, read it in Step 2 alongside the audience and format files, and treat it as the voice spec: it overrides the generic defaults below.** If it doesn't exist and the user asks for a rewrite in their voice, offer to build one (next section) or fall back to asking for samples.
+1. **Diff** your draft against the sent version. List each meaningful difference (ignore typo fixes).
+2. **Classify** each difference:
+   - **Mechanical** (a phrase they always cut, a punctuation habit): propose a line for `voice/blocklist.txt`, so the linter catches it from now on.
+   - **Voice** (rhythm, opener, register, warmth level): propose an edit to `voice/VOICE.md`, quoting the sent text as the receipt.
+   - **Strategy** (they reordered, cut a section, changed the ask): name the principle it maps to; propose a principle or audience edit only if the same correction has happened before.
+   - **One-off** (situational fact you couldn't have known): note it and change nothing.
+3. **Show the proposals** as a short list and apply the ones the user approves. VOICE.md is the user's description of themselves; every edit gets their sign-off.
+4. **Log the pair**: append the situation (audience, format, goal), your draft, and the sent version to `voice/pairs.md`. These pairs are the seed for evaluating changes to this skill later.
 
-### Build a voice doc (one-time, recommended)
+## Voice defaults (when no VOICE.md exists)
 
-Rather than re-pasting samples every session, distill them once into `voice/VOICE.md` (gitignored: it's personal and never gets committed). Use `voice/VOICE.template.md` as the structure. The workflow:
+`voice/VOICE.md` replaces this section entirely when present.
 
-1. **Gather real samples across registers**: sent emails, LinkedIn posts, Slack and WhatsApp messages, docs. 20-50 pieces is plenty; range matters more than volume (a terse chat message *and* a long email). Exports are ideal (Gmail takeout, LinkedIn posts page, Slack export); screenshots work too.
-2. **Exclude AI-drafted text ruthlessly.** If an assistant wrote or heavily edited it, it is not your voice; including it bakes AI prose into the spec and defeats the point. When unsure about a sample's provenance, prefer older writing or things typed on a phone. Tell the agent which samples are suspect.
-3. **Distill into the template.** Every claim in the doc must be traceable to a sample (the template marks aspirational entries separately). For a large corpus, batch the extraction through a cheap fast model (e.g. Haiku-class subagents summarising per-batch: recurring openers, hedges, sentence stats), then have the main model synthesise the final doc.
-4. **Date-stamp and rebuild** when your role or register changes. A voice doc from two jobs ago is worse than none.
+- **Tone**: direct, warm, dry. Plain words, recommendations stated as recommendations ("I recommend X because Y").
+- **Register**: match the user's company voice, spelling, and locale.
+- **Specifics over labels**: state the concrete observation once, back it, and stop. *"The strongest part was the cold-start reframe: you asked why and landed on recall versus recognition"* beats *"That's the kind of thinking we look for."*
+- **Honesty is the default**, so it never needs announcing.
+- **Punctuation**: commas, colons, full stops, and parentheses carry elaboration. A colon is the usual fix where a dash crept in.
 
-**Calibrate on real samples, not adjectives.** The single fastest way to make this sound like you is to give it your actual writing to learn from. Before rewriting anything in the user's voice, make sure you have samples (or a `voice/VOICE.md` built from them):
+The AI tell is redundancy and unearned warmth: the observation, then a feeling about it, then the category it belongs to, plus compliments with no receipt. A strong voice states the specific once, backs it, and stops.
 
-- **Paste 3-6 examples** of things they've actually written: Slack messages, emails, a doc, a couple of customer replies. More range is better (a terse Slack *and* a longer email).
-- **Screenshots are fine.** If it's easier to screenshot a thread or a message than copy the text, take the image; read it and work from that.
-- **Or point at an export.** A Slack export, an email thread, a Google Doc, a Notion page: anything with a few hundred words of their real writing.
+An explicit tone request from the user ("warmer", "more formal") overrides all of this.
 
-Then infer tone, register, sentence length, and habitual hedges from those samples, and fill in the dimensions below from what you actually see, not from what they say they sound like. **If you're about to rewrite in the user's voice and have no samples, ask for them first.** A rewrite guessed from adjectives ("make it warm and direct") reads generic; one grounded in real samples reads like them.
+## Scope
 
-Once you have samples (or the user has filled these in), treat the rest of this section as the template. Fill in your own defaults so the skill writes in your voice, not a generic one. Define each dimension for your context, then let it hold unless a specific piece overrides it:
+- Apply the 2-3 principles that matter; over-applying dilutes the feedback.
+- Preserve phrasing that's recognisably the user's. The principles are about clarity and strategy, not sameness.
+- Decks, slides, and live-verbal scripts are out of scope; redirect.
+- Grammar and typos only on request.
+- Name the principle behind a fix in a few words; explain it fully only on request.
 
-- **Tone**: define your own (e.g. direct, warm, dry; or formal and precise; or plain and friendly). Whatever you pick, name the failure modes to avoid: corporate-speak on one side, performatively casual on the other. A concrete anchor helps ("X is fine to a teammate; 'I wanted to reach out to discuss' is never fine to anyone").
-- **Register / locale**: match your company's established voice, spelling, and locale. Don't let the skill Americanise (or Anglicise) copy your company writes a different way. Note any house-style words to prefer or avoid ("leverage", "circle back", "reach out") for your audience.
-- **Hedge allergies**: strip "just", "I think", "I was wondering if", "maybe we could possibly", "sorry to bother". These dilute authority, especially managing up. Add any others you personally over-use.
-- **Confidence calibration**: state recommendations as recommendations ("I recommend X because Y") without apology. Coach toward that voice when drafts show over-hedging. If your role or seniority warrants a specific register, define it here.
-- **No em dashes, and no spaced hyphens standing in for them**: use a comma, a colon, a full stop, or parentheses. A colon is the usual fix when a dash was introducing an elaboration. The " - " spaced hyphen creeping in is the most common failure mode; it reads as a dash you forgot to fix.
-- **No performative praise labels**: don't state a reaction to the thing instead of the thing ("that's the kind of thinking we look for", "X really stuck with us", "exactly the shape we want", "this is exactly what we look for"). Name the specific thing and stop. The specificity *is* the praise; the label reads as AI and, in feedback, faintly condescending. Before: *"The cold-start reframe stuck with us. That's the kind of thinking we look for."* After: *"The strongest part was the cold-start reframe: you stopped at 'this is annoying', asked why, and landed on recall versus recognition."*
-- **Assume honesty is the default; never announce it**: cut "honest", "honestly", "genuinely", "truly", "to be honest", "one honest piece of feedback". Labelling one line honest implies the rest isn't. The fix is deletion, not rephrasing.
-- **Receipts before you credit**: every specific, verifiable claim in a compliment or characterisation needs a source you can point to. A compliment that's wrong costs more credibility than no compliment. See `principles/accurate-confidence.md` (receipts before you credit).
+## Worked example
 
-**Phrase blocklist (cut on sight, any audience):** "that's the kind of X we look for", "X stuck with us", "exactly the shape we look for", "honestly", "genuinely", "truly", "to be honest", "one honest piece of feedback", "we loved", "came alive", "I'd be remiss", "needless to say", plus em dashes and " - " spaced hyphens.
+Draft: *"Hi [CEO], hope you're well! Just wanted to circle back on the pricing discussion from last week. I know we talked about a few different options and I've been thinking about it more and I think maybe we should consider going with the tiered approach, although there are some risks, so keen to hear your thoughts. Also wanted to flag that the eng team might push back on timelines. Let me know when you have 5 mins to chat!"*
 
-The AI tell isn't formality, it's redundancy and unearned warmth: stating the observation, then a feeling about it, then the category it belongs to, plus compliments with no receipt. A strong voice states the specific once, backs it, and stops.
-
-If you explicitly ask for a different tone (e.g., "make this warmer" or "this needs to sound more formal"), override these defaults.
-
-## Things this skill deliberately doesn't do
-
-- **Does not apply every principle to every draft.** Pick the 2-3 that matter. Over-applying dilutes feedback.
-- **Does not rewrite a user's voice into something generic.** Kao's principles are about clarity and strategy, not about making everyone sound the same. Preserve phrasing that's recognisably the user's.
-- **Does not cover decks, slide presentations, or live-verbal scripts.** Out of scope. If asked, redirect.
-- **Does not police grammar or typos.** Unless explicitly asked. Focus is on strategic communication, not proofreading.
-- **Does not lecture.** The user knows these frameworks exist by now. Cite the principle by name when explaining a fix, but don't explain the whole principle in-line unless asked.
-
-## A worked example
-
-Draft the user pastes: *"Hi [CEO], hope you're well! Just wanted to circle back on the pricing discussion from last week. I know we talked about a few different options and I've been thinking about it more and I think maybe we should consider going with the tiered approach, although there are some risks, so keen to hear your thoughts. Also wanted to flag that the eng team might push back on timelines. Let me know when you have 5 mins to chat!"*
-
-Audience: CEO. Format: Slack. Mode: default → refine.
-
-Strictness: strict.
-
-Principles in play: BLUF, MOO, concise, strategy-not-self-expression, enthusiastic-yes.
-
-Diagnosis: lede buried three clauses deep; hedges everywhere ("just wanted", "I think maybe", "should consider"); MOO (eng pushback) mentioned but not addressed; no clear ask.
-
-Refined output:
+Audience: CEO (strict). Format: Slack. Mode: refine. Principles: BLUF, MOO, concise, enthusiastic-yes.
 
 > [CEO], recommending we go with the tiered pricing approach. Main risk is eng timeline pushback; I've scoped a 2-week delivery with [eng lead] and they're comfortable. Want to lock this in by Friday so we can brief sales next week. 5 mins today or tomorrow?
 
 What changed and why:
-- Lede first, not last: BLUF / signposting
+- Lede first: BLUF / signposting
 - Cut 6 hedges ("just", "I think maybe", "should consider", "keen to hear"): concise / managing up
-- MOO (eng pushback) named and resolved in same breath: MOO
+- Eng pushback named and resolved in the same breath: MOO
 - Clear ask with a deadline: enthusiastic yes
 
-## Reference file structure
+## File structure
 
 ```
 refine/
-├── SKILL.md (this file)
-├── principles/
-│   ├── minimum-viable-backstory.md
-│   ├── signposting.md
-│   ├── qbq.md
-│   ├── moo.md
-│   ├── sales-then-logistics.md
-│   ├── accurate-confidence.md
-│   ├── how-to-be-concise.md
-│   ├── enthusiastic-yes.md
-│   ├── the-warm-no.md
-│   ├── managing-up.md
-│   ├── strategy-not-self-expression.md
-│   ├── present-to-ceo.md
-│   ├── right-amount-of-context.md
-│   ├── yellow-spot-into-sun.md
-│   ├── cedaf-delegation.md
-│   ├── finesse.md
-│   ├── speak-in-the-affirmative.md
-│   ├── invert-the-but.md
-│   └── objective-not-detached.md
-├── audiences/
-│   ├── ceo.md
-│   ├── cross-functional.md
-│   ├── peers.md
-│   └── customers-and-marketing.md
-├── formats/
-│   ├── slack.md
-│   ├── email.md
-│   └── customer-and-marketing.md
+├── SKILL.md
+├── principles/          one file per principle, each opening with a **Source** line
+├── audiences/           ceo, cross-functional, peers, customers-and-marketing
+├── formats/             slack, email, customer-and-marketing
+├── scripts/
+│   ├── lint.sh          deterministic checks (run in Step 6)
+│   ├── blocklist.txt    generic AI tells and hedges
+│   └── check-principle-coverage.sh
 ├── voice/
 │   ├── VOICE.template.md
-│   └── VOICE.md (yours — gitignored, built from your real writing)
-└── scripts/
-    └── check-principle-coverage.sh
+│   ├── BUILDING.md      how to build VOICE.md from real samples
+│   ├── VOICE.md         yours, gitignored
+│   ├── blocklist.txt    yours, gitignored (personal linter additions)
+│   └── pairs.md         yours, gitignored (retro log: draft vs sent)
+└── context/
+    ├── CONTEXT.template.md
+    └── CONTEXT.md       yours, gitignored (role, company, locale, extra formats)
 ```
 
-Read the reference files as needed, don't load them all upfront. The 2-3 principles you select in Step 2, plus the audience and format files, is usually the right load.
+## Maintaining this skill
 
-## Maintaining this skill (adding a principle)
+**Where a new rule goes.** If a pattern can catch it (a phrase, a punctuation mark, a spelling), it goes in a blocklist and the linter enforces it: `scripts/blocklist.txt` if it's a generic AI tell, `voice/blocklist.txt` if it's personal. Prose in this file is for judgement calls only.
 
-Principles get added over time. When you add one, three things need to stay in sync, or the new principle quietly never gets used:
+**Adding a principle or a new reference** (another author whose thinking you want in the skill). Keep these in sync, or the new principle quietly never gets used:
 
-1. **The registry**: add the principle to the "Core principles" list in this file (with its `principles/<stem>.md` link), and to the Step-2 selection heuristics and Step-3 diagnosis patterns where relevant.
-2. **The audiences**: decide which of the four audience playbooks it changes. Not every principle belongs in every audience, but most belong in at least one. Reference it in that audience's "Default principles to apply" list (link it as `principles/<stem>.md` so the coverage check can see it) and add a worked example if it earns one.
-3. **The description**: if the principle is a new headline concept, add it to the `description:` frontmatter trigger list.
+1. **The file**: `principles/<stem>.md`, opening with a `**Source**:` line, restated in original wording.
+2. **Credits**: add the author to `CREDITS.md` at the repo root, following its convention.
+3. **The registry**: add it to the Principles list above, and to the Step 2 heuristics and Step 3 patterns where relevant.
+4. **The audiences**: reference it (as `principles/<stem>.md`) in each audience playbook it changes.
+5. **The description**: only if it's a new headline concept.
 
-To check nothing was missed, run the coverage script:
-
-```sh
-./scripts/check-principle-coverage.sh
-```
-
-It prints a matrix of every principle against SKILL.md and the four audiences, using forgiving matching (case-insensitive, hyphens and spaces treated as equivalent, so prose names like "Right amount of context" count). It flags two things:
-
-- **Missing from SKILL.md**: the principle isn't in the registry at all. Always fix this; the default run exits non-zero on it.
-- **Orphan (no audience references it)**: advisory. A principle can legitimately sit outside the audience playbooks (e.g. a delegation framework), but an orphan usually means a playbook is out of date. Review each one.
-
-Use `--quiet` to see only the gaps, or `--strict` to also fail the run on orphans (useful in CI once every principle is deliberately wired in).
+Then run `./scripts/check-principle-coverage.sh`. It flags principles missing from this file (fails the run) and principles no audience references (advisory; `--strict` fails on those too).

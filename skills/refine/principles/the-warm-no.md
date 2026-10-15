@@ -40,7 +40,7 @@ One, not three. A single specific reads as "I was paying attention." A pile of t
 ## How this interacts with the rest of the skill
 
 - **Receipts still apply.** The one recallable specific has to be true and correctly remembered. A detail you've garbled is worse than none. See `principles/accurate-confidence.md` (receipts before you credit).
-- **No performative warmth.** Don't announce the warmth ("I genuinely wish you the best", "honestly it was a pleasure"). State the specific and stop, same as the voice-calibration rule in SKILL.md.
+- **No performative warmth.** Don't announce the warmth ("I genuinely wish you the best", "honestly it was a pleasure"). State the specific and stop, same as the voice defaults in SKILL.md.
 - **Strategy, not self-expression.** The close serves the relationship, not your need to feel like the good guy about the no.
 
 ## Common failure mode
