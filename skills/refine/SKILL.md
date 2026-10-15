@@ -12,7 +12,7 @@ Sharpens written communication for three format families (Slack/chat, email/writ
 Two optional, gitignored files make this skill the user's rather than generic. When they exist, read both before Step 1 on every run. They override every generic default in this file.
 
 - `voice/VOICE.md`: how the user actually writes, distilled from real samples (tone, rhythm, openers, hedges, punctuation, verbatim snippets). Match it. If it's missing and the user wants output in their voice, offer to build one (`voice/BUILDING.md`) or ask for 3-6 real samples first; a rewrite guessed from adjectives reads generic.
-- `context/CONTEXT.md`: who the user is and where they work (role, company, locale, people by role, house terms, extra formats). If it names a locale, pass it to the linter (e.g. `--au`).
+- `context/CONTEXT.md`: who the user is and where they work (role, company, locale, people by role, house terms, extra formats). If it names linter flags (a locale like `--au`, or `--allow-spaced-hyphen` for someone who types " - " themselves), pass them in Step 6.
 
 ## Principles
 
@@ -142,7 +142,7 @@ Skip straight to the draft when the context already answers these.
 
 ### Step 6: Check before sending
 
-1. **Run the linter** on the output (save the draft to a temp file, or pipe it): `scripts/lint.sh [--au] draft.md`. It catches the mechanical tells deterministically: dashes, announced honesty, performative praise, filler hedges, the user's personal blocklist, and (with `--au`) US spellings. Fix every finding, or keep it deliberately when it's inside a quotation.
+1. **Run the linter** on the output (save the draft to a temp file, or pipe it): `scripts/lint.sh [flags from CONTEXT.md] draft.md`. It catches the mechanical tells deterministically: dashes, announced honesty, performative praise, filler hedges, the user's personal blocklist, and (with `--au`) US spellings. Fix every finding, or keep it deliberately when it's inside a quotation.
 2. **Lead**: the first sentence carries the point or the ask (strict), or the second at the latest (relaxed).
 3. **Objection**: a sceptical reader's first pushback is answered in the first paragraph.
 4. **Concision**: every remaining sentence earns its place.
