@@ -64,6 +64,10 @@ report "em-dash" "$(grep -n '—' "$TMP" || true)" "use a comma, colon, full sto
 report "en-dash" "$(grep -n ' – ' "$TMP" || true)" "use a comma, colon, full stop, or parentheses"
 $ALLOW_SPACED_HYPHEN || report "spaced-hyphen" "$(grep -nE '[[:alnum:][:punct:]] - [[:alnum:]]' "$TMP" | grep -vE '^[0-9]+:[[:space:]]*- ' || true)" "a spaced hyphen reads as a dash you forgot to fix"
 
+# Compound durations used as adjectives take a hyphen: "a 30-minute chat", "5-minute version".
+# Singular unit followed by a word; skips "1 week ago", "1 day of".
+report "unhyphenated-duration" "$(grep -n -i -E '\b[0-9]+ (second|minute|hour|day|week|month|year) [[:alpha:]]' "$TMP" | grep -v -i -E '\b[0-9]+ (second|minute|hour|day|week|month|year) (ago|from|later|before|after|left|of|or|and|to|in|on|at)\b' || true)" "hyphenate when it describes a noun: 30-minute chat"
+
 lint_list() { # file
   local file="$1" phrase hint
   [[ -f "$file" ]] || return 0

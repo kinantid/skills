@@ -78,7 +78,7 @@ Read the personal layer (if present), the audience playbook, the format file, an
 - Slack to a peer → concise, MVB (dialled down)
 - Delegating, writing a brief or spec → cedaf-delegation, sales-then-logistics, MOO
 - Forecasts, estimates, numbers → accurate-confidence, MOO
-- Saying no while keeping the relationship → the-warm-no, accurate-confidence, strategy-not-self-expression
+- Saying no while keeping the relationship (incl. feedback inside a rejection) → the-warm-no, accurate-confidence, strategy-not-self-expression
 - Feedback, praise, shout-outs, recommendations → accurate-confidence, strategy-not-self-expression, yellow-spot-into-sun, invert-the-but, speak-in-the-affirmative
 - Bad news, incidents, unpopular-but-reasonable decisions → objective-not-detached, finesse, MVB
 - Instructions, availability, scheduling, boundaries → speak-in-the-affirmative, concise
@@ -142,7 +142,7 @@ Skip straight to the draft when the context already answers these.
 
 ### Step 6: Check before sending
 
-1. **Run the linter** on the output (save the draft to a temp file, or pipe it): `scripts/lint.sh [flags from CONTEXT.md] draft.md`. It catches the mechanical tells deterministically: dashes, announced honesty, performative praise, filler hedges, the user's personal blocklist, and (with `--au`) US spellings. Fix every finding, or keep it deliberately when it's inside a quotation.
+1. **Run the linter** on the output (save the draft to a temp file, or pipe it): `scripts/lint.sh [flags from CONTEXT.md] draft.md`. It catches the mechanical tells deterministically: dashes, announced honesty, performative praise, filler hedges, unhyphenated compound durations ("30 minute chat"), the user's personal blocklist, and (with `--au`) US spellings. Fix every finding, or keep it deliberately when it's inside a quotation.
 2. **Lead**: the first sentence carries the point or the ask (strict), or the second at the latest (relaxed).
 3. **Objection**: a sceptical reader's first pushback is answered in the first paragraph.
 4. **Concision**: every remaining sentence earns its place.
