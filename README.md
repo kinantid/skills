@@ -128,8 +128,24 @@ Three things make or break the voice doc:
    unambiguously typed by you; polished longform often isn't. Let short-form set
    the sentence texture and let the skill's principles carry longform structure.
 
-The full workflow (including using a cheap model for bulk extraction) is in the
-skill's "Voice calibration" section.
+The full workflow (including using a cheap model for bulk extraction) is in
+[`voice/BUILDING.md`](skills/refine/voice/BUILDING.md).
+
+### Keep it sharp: the linter and retro mode
+
+- **`scripts/lint.sh`** runs on every draft before it's returned. It catches the
+  mechanical tells deterministically (em dashes, spaced hyphens, "honestly",
+  performative praise, filler hedges, and with `--au` US spellings) instead of
+  hoping the model remembers a list. Add your own phrases to the gitignored
+  `voice/blocklist.txt`.
+- **Retro mode**: paste what you actually sent after using a draft, or say
+  "retro". The skill diffs its draft against yours and proposes where each
+  correction belongs: a linter rule, a VOICE.md edit, or a principle. It logs
+  the pair to the gitignored `voice/pairs.md`, so the skill keeps learning
+  your voice from real sends.
+- **`context/CONTEXT.md`** (gitignored, from `context/CONTEXT.template.md`)
+  holds the situation you write in: role, company, locale, the people you
+  write to, house terms, and any private formats.
 
 → **[Read the full skill](skills/refine/SKILL.md)**: the principles, the audience
 playbooks (CEO, cross-functional, peers, customers/marketing), the formats, and

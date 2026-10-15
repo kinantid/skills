@@ -20,6 +20,7 @@ project.
 | **content-designer (ux-writing-skill)** | The MIT-licensed skill the `ux-writing` skill builds on: pattern taxonomy, benchmarks compilation, accessibility guidance, tone-by-emotional-state model. | [github.com/content-designer/ux-writing-skill](https://github.com/content-designer/ux-writing-skill) |
 | **Jenni Nadler (Wix UX)** | The error-message anatomy in `ux-writing`: say what happened and why, reassure on what wasn't affected, help them fix it, always give a way out; the four bad-error smells; generic vs unclear; challenging generic errors. From "When life gives you lemons, write better error messages" (2022). | [wix-ux.com](https://wix-ux.com/when-life-gives-you-lemons-write-better-error-messages-46c5223e1a2f) |
 | **American Press Institute** | The sentence-length comprehension figures cited in the benchmarks (via the ux-writing-skill compilation). | [americanpressinstitute.org](https://www.americanpressinstitute.org/) |
+| **Matt Pocock** | The split in `refine` between deterministic checks (`scripts/lint.sh`) and judgement-call prose, and the retro mode that turns corrections into checks or doc edits: adapted from his `retro` and `writing-for-agents` skills. | [github.com/mattpocock/skills](https://github.com/mattpocock/skills), [aihero.dev](https://www.aihero.dev/) |
 
 ## Convention for adding a principle from a source
 

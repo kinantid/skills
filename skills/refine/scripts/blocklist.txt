@@ -1,0 +1,34 @@
+# Generic AI tells and hedges. One phrase per line, case-insensitive.
+# Optional " | hint" suffix. Personal additions go in voice/blocklist.txt.
+
+# Performative praise: name the specific thing and stop
+the kind of thinking we | name the specific thing they did, then stop
+stuck with us | name the specific thing they did, then stop
+exactly the shape | name the specific thing they did, then stop
+exactly what we look for | name the specific thing they did, then stop
+we loved | state the observation, not the feeling about it
+came alive | state the observation, not the feeling about it
+so excited | state the observation, not the feeling about it
+
+# Announced honesty: honesty is the default
+honestly | delete; honesty is the default
+genuinely | delete; honesty is the default
+truly | delete; honesty is the default
+to be honest | delete; honesty is the default
+one honest | delete; honesty is the default
+
+# Filler and hedges
+hope this finds you well | open with the point
+just wanted to | open with the point
+just checking in | state what you need and by when
+just following up | state what you need and by when
+circle back | say "come back to" or name the date
+touch base | name the meeting or the question
+I think maybe | state it as a recommendation: "I recommend X because Y"
+maybe we could possibly | state it as a recommendation: "I recommend X because Y"
+I was wondering if | ask directly
+sorry to bother | ask directly
+I'd be remiss | delete
+needless to say | delete
+it's worth noting | delete and state the point
+at the end of the day | delete
