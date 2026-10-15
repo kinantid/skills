@@ -15,7 +15,8 @@ recommendation without hedging; who you report to. -->
 ## Locale
 
 <!-- Spelling (AU/UK/US) and the lint flag to pass (e.g. --au). Words to prefer
-or avoid for your market; when a different locale applies (e.g. US customers). -->
+or avoid for your market; when a different locale applies (e.g. US customers).
+Any other linter flags, e.g. --allow-spaced-hyphen if " - " is your own habit. -->
 
 ## People by role
 

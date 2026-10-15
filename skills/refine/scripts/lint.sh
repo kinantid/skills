@@ -10,6 +10,7 @@
 #   ./scripts/lint.sh draft.md          # lint a file
 #   pbpaste | ./scripts/lint.sh         # lint stdin
 #   ./scripts/lint.sh --au draft.md     # also flag US spellings
+#   ./scripts/lint.sh --allow-spaced-hyphen draft.md   # " - " is your own habit
 #
 # Phrase lists:
 #   scripts/blocklist.txt   generic AI tells and hedges (committed)
@@ -24,12 +25,14 @@ export LC_ALL="${LC_ALL:-en_US.UTF-8}"
 
 SKILL_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 AU=false
+ALLOW_SPACED_HYPHEN=false
 INPUT=""
 
 for arg in "$@"; do
   case "$arg" in
     --au) AU=true ;;
-    -h|--help) sed -n '2,20p' "${BASH_SOURCE[0]}" | sed 's/^# \{0,1\}//'; exit 0 ;;
+    --allow-spaced-hyphen) ALLOW_SPACED_HYPHEN=true ;;
+    -h|--help) sed -n '2,21p' "${BASH_SOURCE[0]}" | sed 's/^# \{0,1\}//'; exit 0 ;;
     -*) echo "Unknown flag: $arg" >&2; exit 2 ;;
     *) INPUT="$arg" ;;
   esac
@@ -59,7 +62,7 @@ report() { # rule, grep-output, hint
 # Dashes: the most common AI tell. Em dash, en dash, or a spaced hyphen doing a dash's job.
 report "em-dash" "$(grep -n '—' "$TMP" || true)" "use a comma, colon, full stop, or parentheses"
 report "en-dash" "$(grep -n ' – ' "$TMP" || true)" "use a comma, colon, full stop, or parentheses"
-report "spaced-hyphen" "$(grep -nE '[[:alnum:][:punct:]] - [[:alnum:]]' "$TMP" | grep -vE '^[0-9]+:[[:space:]]*- ' || true)" "a spaced hyphen reads as a dash you forgot to fix"
+$ALLOW_SPACED_HYPHEN || report "spaced-hyphen" "$(grep -nE '[[:alnum:][:punct:]] - [[:alnum:]]' "$TMP" | grep -vE '^[0-9]+:[[:space:]]*- ' || true)" "a spaced hyphen reads as a dash you forgot to fix"
 
 lint_list() { # file
   local file="$1" phrase hint
