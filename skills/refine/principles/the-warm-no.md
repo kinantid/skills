@@ -28,6 +28,8 @@ A genuine, useful offer beats a vague open-ended one, and protects you from prom
 
 Name the specific, low-commitment thing. Don't imply standing mentorship or an open door you won't actually hold open. A bounded offer you'll honour is warmer than a grand one you won't.
 
+**No door when there's no fit.** "This round", "keep your details on file" and "we'd love to hear how it goes" all invite the person back. If you wouldn't follow up, leave them out. Doing that is the kinder choice: a door you never open keeps hope alive for months. Close on their own next step instead ("good luck with placement year"). When you really would reconsider, "this round" is honest and worth keeping.
+
 ### 3. Personalise the close with one recallable specific
 
 One genuine detail makes a warm close land as human rather than templated: their App Store goal, the Chrome-store approval they're waiting on, the side project they mentioned, the coffee they said they were about to grab.
@@ -36,6 +38,26 @@ One, not three. A single specific reads as "I was paying attention." A pile of t
 
 - Good: *"Good luck with the App Store submission, hope the review goes smoothly."*
 - Templated: *"Wishing you all the best in your future endeavours."*
+
+Pick a specific about what they're working towards (a competition, an exam, a launch). Avoid their personal logistics, like a move or a family event. Those can read as more familiar than one interview earns.
+
+## Feedback inside a rejection
+
+When a no comes with feedback (a candidate after an interview, a vendor after a pitch), the shape matters more than the content. Giving one theme is kind. Giving a list reads as an assessment, and it gives the person more to argue with.
+
+1. **The no, plainly.** Thank them for their time, then decline in one sentence.
+2. **One theme.** Name the single biggest gap, framed as what separated the people who went forward ("the candidates we're progressing had already put something in front of real users"). Tie it to one concrete thing they showed you, so it reads as specific, not generic.
+3. **Why it matters for the role, then one way to practise it.** Describe a habit they can build. Don't replay the interview moment by moment.
+4. **Credit one real strength**, if there is one to credit, and end that section on it (see `principles/invert-the-but.md`).
+5. **Let them own it.** "Hope that's useful - take what's helpful and leave the rest" hands over the feedback without asking them to agree.
+
+Guardrails:
+
+- **Get the theme right before you write it.** Check it with whoever was in the room. A well-written point that misdiagnoses someone is worse than no feedback. Credit the person accurately as well: if they built something alone inside a group project, say that, not "a team effort".
+- **Leave out what you can't back up**, and anything that's about personality, nerves, or the format you chose (a video call is harder than a room).
+- **Don't reopen the interview.** If they reply asking why, thank them and point back to the note in your email.
+
+Specific, single-theme feedback is usually received well. People reply that it's fair and that they know what to work on next. Vague kindness gets no reply, and a list of three points gets a rebuttal.
 
 ## How this interacts with the rest of the skill
 
