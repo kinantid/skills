@@ -148,7 +148,7 @@ Skip straight to the draft when the context already answers these.
 4. **Concision**: every remaining sentence earns its place.
 5. **Voice**: it reads like the samples in `voice/VOICE.md`: the user's sentence length, openers, and register for this audience.
 6. **Ask**: the next action, owner, and date are clear.
-7. **Receipts** (when crediting or characterising someone): every specific claim traces to a source you can point to; soften or cut the rest.
+7. **Receipts** (when crediting or characterising someone, quoting what someone said, or telling a customer what the product does): every specific claim traces to a source you can point to (a transcript for who said what; the code, the ticket or the vendor docs for product behaviour); soften or cut the rest.
 
 Revise until all seven pass.
 

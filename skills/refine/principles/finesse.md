@@ -46,6 +46,16 @@ This is the trap. Every clause plants a doubt: *"don't have hard limits," "witho
 
 Identical information. Person C just led with the capability, stated the headroom, and turned "what happens at scale" from a worry into a managed promise. No claim here is false. That's the bar: **frame for confidence without crossing into marketing-speak or anything you can't back.**
 
+## Find the lever before you touch the words
+
+The six steps run front to back for a reason. A negative-language pass on its own swaps words, and the reader sees a nicer-sounding version of the same answer. The real move comes from step 2: look for a true lever that changes the shape of the answer, then build the message around it.
+
+- **The weak fact:** "you'd be our first customer on this integration".
+- **Words-only rewrite:** "you'd be our first customer, which is why the sandbox matters". It's softer, but the reader's worry (untested code near their books) is still unanswered.
+- **Lever-led rewrite:** the product already let the customer connect with export switched off, then switch it on themselves. So the answer became a staged rollout with their sign-off at each step (test copy → read-only → writes on). "You'd be first" now reads as the reason the plan exists, and the reader gets the control they were asking for.
+
+To find a lever, ask what the reader is actually afraid of losing (control, money, time, face). Then check the product, the contract or the process for a true option that hands it back to them. Confirm the lever exists before you offer it. A lever you can't deliver is spin.
+
 ## How to apply it
 
 When the stakes are delicate (a customer question, a CEO ask, a no you have to deliver), run a two-pass edit:
@@ -68,6 +78,9 @@ The same sentence that's authentic from one person is off-key from another. A ch
 Underneath all of it: know what you want the audience to *do* before you open your mouth. If you're not sure, figure it out first, then have the conversation. Finesse without a goal is just nice wording. See `principles/strategy-not-self-expression.md`.
 
 ## What finesse is NOT
+
+- **Not softening the guarantees.** For a risk-minded reader (a CFO or security reviewer), explicit negatives such as "no journal entries" and "can't see the other entity" are the controls they asked for. Keep those as plain negatives, and run the negative-language audit on the hedges around them.
+- **Not dodging a direct question.** When the reader asks "how many?", the answer has to be unambiguous, even when it's framed ("you'd be our first" answers "none" plainly).
 
 - **Not lying or spin.** The facts stay true. You're choosing emphasis and framing, not inventing reality.
 - **Not marketing-speak.** Person C is confident, not breathless. Over-framing ("blazing-fast, infinitely scalable, zero limits") destroys the credibility that finesse is meant to build.
