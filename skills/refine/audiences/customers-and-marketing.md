@@ -25,6 +25,10 @@ Anyone outside your company: customers (existing and prospective), marketing rea
 8. **Objective, not detached** (incidents and apologies): when something actually broke, customers get real numbers, one honest severity line, and the fix — not "we take this very seriously" boilerplate. See `principles/objective-not-detached.md`.
 9. **Right amount of context**: minimum. Proof → promise → action. When pairing a limitation with a capability, close on the capability (invert the but, `principles/invert-the-but.md`).
 
+## Status and capability claims need the system of record
+
+A customer email about what the product does, or where a fix stands, is a commitment. Before finessing it, check each claim against the source of truth: the ticket or CS inventory for status, and the code, the card or the vendor's own docs for capability. Sales calls, demos, summaries and internal chat state intentions. Customers who cross-check (CFOs, implementation consultants) will find the gap. This has come up twice: a support status reply where the ticket held the real release status, and an integration reply where the demo's promised scope was wider than the code. See the receipts section in `principles/accurate-confidence.md`.
+
 ## What they want to see
 
 - A concrete proof point or value prop in the first line.
