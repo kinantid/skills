@@ -66,7 +66,7 @@ Before crediting someone (or a tool, or a result), check the specific against th
 - **Don't inflate the scope of a claim.** "Tested with real users" when one client tested it once: "real users" implies the user base. Say what actually happened ("tested it offline from Launceston airport").
 - **Get the domain facts right.** "Switched from Expo to React Native" reads as a framework swap to anyone technical, since Expo *is* React Native. Precision matters when the reader (or the subject) knows the space.
 
-- **Get the speaker right.** "As you suggested on our June call" is a claim about who said what. Check it against the transcript, not the meeting summary: summaries merge speakers and smooth over hedges. In one case the reader had proposed the pilot but had also floated using production data, so the line had to credit the pilot and nothing more.
+- **Get the speaker right.** "As you suggested on our last call" is a claim about who said what. Check it against the transcript, not the meeting summary: summaries merge speakers and drop hedges, so a reader can end up credited with a firmer position than the one they actually took.
 
 The same rule covers claims about what a product or system does, which in customer email are promises. Get them from the system of record (the code, the ticket, the vendor's own docs), not from sales calls, demos or internal chat. Demos describe the vision. In one case a demo had promised two-way sync of commitments, invoices and change orders, while the code exported AP bills only. When a claim is second-hand (a reseller's price, a summary's attribution), mark it as second-hand or leave it out. Never turn "the vendor charges the partner" into "we pay".
 
