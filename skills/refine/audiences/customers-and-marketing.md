@@ -29,6 +29,25 @@ Anyone outside your company: customers (existing and prospective), marketing rea
 
 A customer email about what the product does, or where a fix stands, is a commitment. Before finessing it, check each claim against the source of truth: the ticket or CS inventory for status, and the code, the card or the vendor's own docs for capability. Sales calls, demos, summaries and internal chat state intentions. Customers who cross-check (CFOs, implementation consultants) will find the gap. This has come up twice: a support status reply where the ticket held the real release status, and an integration reply where the demo's promised scope was wider than the code. See the receipts section in `principles/accurate-confidence.md`.
 
+## Status updates to existing customers (open-item lists, escalation replies)
+
+A list of open items is a set of promises, so the label on each item has to say how big the promise is. Customers read "next in line" and "under review" as "this week", and read "logged" as "filed and forgotten". Use one fixed set of labels, each mapped to the ticket's real state:
+
+| Label | Promise | Ticket state |
+|---|---|---|
+| **Live** | You can use it today | Done, in a production deploy (merged isn't enough), and confirmed by a person in the customer's own account |
+| **Coming [timeframe]** | Built and finishing, with an engineer's estimate | In review or in progress |
+| **Planned** | Committed; we'll let you know when it's scheduled | Accepted into the queue |
+| **On our list, not scheduled yet** | Captured with their examples, not committed | Triage, needs input, backlog |
+| **In design** | Being shaped now; their input wanted | Only when it's true |
+
+- **Put a one-line legend above the list**, written so it works word for word for any customer: "Live means you can use it now. Planned means it's on our roadmap, and we'll let you know when it's scheduled. On our list, not scheduled yet means we've captured it with your examples. Items move up as more customers ask for them, so if one is holding up your work, tell support and we'll factor it in."
+- **Make it scale.** Point the customer to a channel that already exists (support). Don't promise a per-customer ranking call or a fixed update cadence ("every Friday"). Keep one-off prioritisation sessions for high-touch accounts, and put them in the meeting invite rather than in the standard wording.
+- **Loosen engineer estimates by one step.** "Likely tomorrow morning" becomes "this week". If it ships early you've delivered early, and if it slips a day you've broken nothing.
+- **Hold labels steady across the team.** Read what teammates have already told the customer, and don't move an item to a lower label without saying why. If you're building on a teammate's reply, name it ("following on from [teammate]'s note"). Two people giving the same customer different statuses reads as disorganised.
+- **Every "On our list" item needs a ticket.** If you can't point to one, file it before sending, or say "noted for the team".
+- **Lead with credit, then own the miss once.** Open with a specific count of what their feedback changed, plus one or two items they'll recognise. If we failed to tell them about fixes, own it in one sentence that leads into the fix: "You should have heard about each one as it landed, so this email brings them together in one place."
+
 ## What they want to see
 
 - A concrete proof point or value prop in the first line.

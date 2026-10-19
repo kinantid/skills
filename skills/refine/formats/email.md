@@ -144,6 +144,11 @@ Two sins:
 
 Structure: *what happened → what it means → what's next*. Always.
 
+**A long item-by-item status (a customer asks for "a status on each issue")**: keep the email body to about 300 words, and put the full list after the sign-off.
+- Body: credit and ownership in one or two sentences, then "Still open, most urgent first" (three items at most, each with a workaround), then "Ready to use now", then the ask or the meeting.
+- After the sign-off: "Full status", grouped under the customer's own headings so they can match each item to what they asked about, with the status legend at the top. See the status-updates section in `audiences/customers-and-marketing.md`.
+- When the reply schedules something, state the customer's time zone ("10:30am AEST (Brisbane time)"). Queensland doesn't observe daylight saving, so AEDT is an hour off for Brisbane during summer.
+
 ### Decision memos
 
 A decision memo exists to get a decision. It should contain:

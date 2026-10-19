@@ -74,6 +74,7 @@ Read the personal layer (if present), the audience playbook, the format file, an
 - Answering an exec question → question behind the question, concise, MVB, accurate-confidence
 - Managing up to CEO or board → managing-up, present-to-ceo, MOO, sales-then-logistics
 - Customer / marketing copy → strategy-not-self-expression, enthusiastic-yes, concise, yellow-spot-into-sun, finesse
+- Customer status update or escalation reply (a list of open items) → accurate-confidence, objective-not-detached, yellow-spot-into-sun, speak-in-the-affirmative, plus the status-updates section of `audiences/customers-and-marketing.md` (fixed status labels and the standard legend)
 - Delicate or loaded question (limits, pricing, "can you do X?") → finesse, qbq, strategy-not-self-expression
 - Slack to a peer → concise, MVB (dialled down)
 - Delegating, writing a brief or spec → cedaf-delegation, sales-then-logistics, MOO
