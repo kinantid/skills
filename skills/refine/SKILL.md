@@ -74,6 +74,7 @@ Read the personal layer (if present), the audience playbook, the format file, an
 - Answering an exec question → question behind the question, concise, MVB, accurate-confidence
 - Managing up to CEO or board → managing-up, present-to-ceo, MOO, sales-then-logistics
 - Customer / marketing copy → strategy-not-self-expression, enthusiastic-yes, concise, yellow-spot-into-sun, finesse
+- Customer status update or escalation reply (a list of open items) → accurate-confidence, objective-not-detached, yellow-spot-into-sun, speak-in-the-affirmative, plus the status-updates section of `audiences/customers-and-marketing.md` (fixed status labels and the standard legend)
 - Delicate or loaded question (limits, pricing, "can you do X?") → finesse, qbq, strategy-not-self-expression
 - Slack to a peer → concise, MVB (dialled down)
 - Delegating, writing a brief or spec → cedaf-delegation, sales-then-logistics, MOO
@@ -148,7 +149,7 @@ Skip straight to the draft when the context already answers these.
 4. **Concision**: every remaining sentence earns its place.
 5. **Voice**: it reads like the samples in `voice/VOICE.md`: the user's sentence length, openers, and register for this audience.
 6. **Ask**: the next action, owner, and date are clear.
-7. **Receipts** (when crediting or characterising someone): every specific claim traces to a source you can point to; soften or cut the rest.
+7. **Receipts** (when crediting or characterising someone, quoting what someone said, or telling a customer what the product does): every specific claim traces to a source you can point to (a transcript for who said what; the code, the ticket or the vendor docs for product behaviour); soften or cut the rest.
 
 Revise until all seven pass.
 
