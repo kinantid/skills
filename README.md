@@ -95,7 +95,9 @@ fetch the repository. Either way, start a new chat and type `$refine`.
   standards and the MIT-licensed
   [content-designer/ux-writing-skill](https://github.com/content-designer/ux-writing-skill),
   with Jenni Nadler's Wix error-message anatomy and in-product conventions
-  (punctuation, length targets, verb precision) folded in. Personalise it with
+  (punctuation, length targets, verb precision) folded in. It runs as a workflow
+  (write, review, audit) with receipts for behaviour claims, a smell table,
+  and a checker script (`scripts/check-ux-copy.sh`). Personalise it with
   a gitignored `product/PRODUCT.md` overlay (terminology, house style, brand
   voice pointer) - same idea as refine's voice doc: `git pull` never touches it.
 

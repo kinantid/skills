@@ -40,7 +40,8 @@ again. If it keeps happening, contact support.`
 - **Passing the blame** - onto the person ("invalid input") or onto a third
   party ("X isn't responding"). Own it: "We're having trouble connecting to X."
 - **Generic for no reason** - "Something went wrong" when the cause is
-  knowable. If you know, say it.
+  knowable. If you know, say it. Its cousin: two causes joined by "or" when
+  the code knows which one happened.
 
 **Generic and unclear are different failures.** "Something went wrong and this
 action could not be completed" tells the reader nothing; "Make sure you allow
@@ -86,6 +87,33 @@ Pattern: `[Benefit]. [Permission ask].`
 Pattern: `[What they can't do]. [Who can help].`
 - "You don't have permission to edit this template. Ask your admin to grant
   access."
+
+## Recovery actions that lose work
+
+When the fix is an action that throws something away (refresh, reload,
+discard, start over), the message says what the action keeps and what it
+loses before the person clicks. Give them a chance to save what they'd lose:
+"Refreshing clears the highlighted edits, so note them first." Only state
+what's kept once the code confirms it.
+
+## Stale data and concurrent edits
+
+The open view has fallen behind changes made elsewhere: another person
+published, another tab saved, or the edit session ended. Write one message
+per state the code can tell apart, and match severity to what's at risk.
+
+| State | At risk | Surface | Pattern |
+| --- | --- | --- | --- |
+| Viewing, newer version exists | Nothing | Info banner | `[Object] was updated since you opened it. [Refresh to see the latest].` |
+| Editing, someone else published | Unsaved edits | Warning banner; block further edits | `[Who] published changes to this [object] while you were editing. [Refresh to keep editing]. [What refresh clears].` |
+| Editing, session ended | Unsaved edits | Warning banner; block further edits | `Your editing session ended [reason if known]. [Refresh to keep editing]. [What refresh clears].` |
+| Autosave rejected | The edits since the last save | Persistent alert, not a toast | `Your latest edits weren't saved. [Why]. [What's safe]. [What refresh clears].` |
+
+- Name the object ("this schedule"), not the container ("this page").
+- Name the actor when known ("Sam Lee published changes"); avoid "changes
+  were made".
+- Don't explain the mechanism ("session timed out", "version conflict").
+  Say what it means for their work.
 
 ## Length and mechanics
 
